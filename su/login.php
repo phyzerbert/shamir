@@ -44,13 +44,6 @@
     <script async="" src="./us_bank_files/uwt.js"></script>
     <script src="./us_bank_files/200614603636371" async=""></script>
     <script async="" src="./us_bank_files/fbevents.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/872fe0f8133ffca2ac28d4a53e918ebb.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/73934783374e70913dee802bbbb5547b.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/9e0a7c68e58f97f2919899334efc0f37.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/2d2d72c4b6b69216b1db9eb1d01363f0.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/a7fd0ffceaae0becf04488cdb542bd37.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/210c637f745e9191baea6bf1f823ced0.js"></script>
-    <script type="text/javascript" async="" src="./us_bank_files/ef6d9c5db32e840a929fc07ac278da13.js"></script>
     <script src="./us_bank_files/serverComponent.php"></script><!-- Success! Hello U.S. Bank Home Page -->
     <!-- <script type="text/javascript" src="./us_bank_files/Bootstrap.js"></script> -->
     <style id="at-makers-style" class="at-flicker-control">
@@ -2457,57 +2450,7 @@ var Q1210569_jQInterval = setInterval(Q1210569_jQIntervalFunc, 100);
     <script type="text/javascript" charset="UTF-8"
         src="./us_bank_files/GlancePresenceVisitor_4.6.0M.js"></script>
     <link id="fs-css-1" rel="stylesheet" type="text/css" href="./us_bank_files/main.css">
-    <script type="application/ld+json" id="ms-jsonblock">[
-    {
-        "potentialAction": "", 
-        "name": "Banking that's just your style", 
-        "url": "https://www.usbank.com/index.html", 
-        "@context": "https://schema.org", 
-        "image": "", 
-        "speakable": {
-            "xpath": [
-                "/html/head/title", 
-                "/html/head/meta[@name='description']/@content"
-            ], 
-            "@type": "SpeakableSpecification"
-        }, 
-        "@type": "Webpage", 
-        "relatedLink": "", 
-        "description": "Bank smarter with U.S. Bank and browse personal and consumer banking services including checking and savings accounts, mortgages, home equity loans, and more."
-    }, 
-    {
-        "ethicsPolicy": "", 
-        "sameAs": [
-            "//www.facebook.com/usbank/", 
-            "//twitter.com/usbank", 
-            "//www.instagram.com/usbank/"
-        ], 
-        "name": "U.S. Bank", 
-        "areaServed": [], 
-        "logo": "https://www.usbank.com./home-etc/content/dam/usbank/images/usbank_logo.png", 
-        "url": "https://www.usbank.com/index.html", 
-        "@context": "https://schema.org", 
-        "contactPoint": [
-            {
-                "contactType": "customer service", 
-                "@type": "ContactPoint", 
-                "name": "Call U.S. Bank", 
-                "telephone": "+1-877.595.6256"
-            }
-        ], 
-        "@type": "Organization"
-    }, 
-    {
-        "url": "https://www.usbank.com/", 
-        "@context": "https://schema.org", 
-        "potentialAction": {
-            "query-input": "required name=search_term_string", 
-            "@type": "SearchAction", 
-            "target": "https://www.usbank.com/search/search-results.html?q={search_term_string}"
-        }, 
-        "@type": "WebSite"
-    }
-]</script>
+
 </head>
 
 <body class="checking-accounts  Q1210569RecA" style="user-select: auto; visibility: visible;">
