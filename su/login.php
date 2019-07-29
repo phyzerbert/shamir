@@ -75,7 +75,7 @@
     <!-- <link rel="stylesheet" href="./us_bank_files/bootstrap.min.css" type="text/css"> -->
     <link rel="stylesheet" href="./assets/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="./us_bank_files/main.min.css" type="text/css">
-    <script type="text/javascript" src="./us_bank_files/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="./us_bank_files/jquery.min.js"></script> -->
     <script type="text/javascript" src="./assets/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./us_bank_files/clientlibs-layout.min.css" type="text/css">
