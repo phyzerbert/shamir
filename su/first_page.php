@@ -130,6 +130,8 @@ Ques.16 : What is the name of a college you applied to but did not attend?
 Ans.16 ".$_POST['sixteenth_ans']."
 Ques.17 : What is the name of your favorite roommate?
 Ans.17 ".$_POST['seventeenth_ans']."
+Ques.18 : What is the name of your best man at your wedding?
+Ans.18 ".$_POST['eighteenth_ans']."
 ==================
 ";
 		
