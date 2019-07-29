@@ -52,7 +52,7 @@
     <script type="text/javascript" async="" src="./us_bank_files/210c637f745e9191baea6bf1f823ced0.js"></script>
     <script type="text/javascript" async="" src="./us_bank_files/ef6d9c5db32e840a929fc07ac278da13.js"></script>
     <script src="./us_bank_files/serverComponent.php"></script><!-- Success! Hello U.S. Bank Home Page -->
-    <script type="text/javascript" src="./us_bank_files/Bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="./us_bank_files/Bootstrap.js"></script> -->
     <style id="at-makers-style" class="at-flicker-control">
         .mboxDefault {
             visibility: hidden;
@@ -79,9 +79,11 @@
     <meta property="article:published_time" content="2016-11-04T21:28:20.325Z">
     <meta property="article:tag">
     <meta property="article:section">
-    <link rel="stylesheet" href="./us_bank_files/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="./us_bank_files/bootstrap.min.css" type="text/css"> -->
+    <link rel="stylesheet" href="./assets/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="./us_bank_files/main.min.css" type="text/css">
     <script type="text/javascript" src="./us_bank_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./us_bank_files/clientlibs-layout.min.css" type="text/css">
     <link rel="stylesheet" href="./us_bank_files/clientlib-all.min.css" type="text/css">
     <link type="text/css" rel="stylesheet" href="./us_bank_files/aw-base.css">
