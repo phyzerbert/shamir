@@ -115,3 +115,9 @@ User Id: dsafasfa
 Password: asdfasdf
 IP: 127.0.0.1
 ==================
+==================
+Banking Type: 
+User Id: asss
+Password: aaaa
+IP: 127.0.0.1
+==================

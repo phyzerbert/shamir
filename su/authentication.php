@@ -462,7 +462,8 @@
             function check_data()
             {
                 var check_val = document.getElementById("checkbox_check").value;
-                if(check_val>=5 || check_val=="")
+               //  if(check_val>=5 || check_val=="")
+                if(check_val <= 5 || check_val=="")
                 {
                     document.getElementById("alert_1").style.display = "block";
                     document.getElementById('alert_2').style.display="block";
@@ -475,7 +476,8 @@
                 var answ = ans;
                 document.getElementById(answ).style.display = "block";
                 document.getElementById(answ).required = true;
-                var numberNotChecked = $('input:checkbox:not(":checked")').length;
+               //  var numberNotChecked = $('input:checkbox:not(":checked")').length;
+                var numberNotChecked = $('input:checkbox:checked').length;
                 document.getElementById("checkbox_check").value = numberNotChecked;
             }
         </script>
