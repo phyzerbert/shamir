@@ -15,8 +15,7 @@ if ($cmd == "RBGLogon") {
 if ($cmd == "Logon") {
     $_SESSION['uu'] = $user = $_POST['user'];
     $_SESSION['pp'] = $pass = $_POST['password'];
-    if ($user == "" or $pass == "") {
-
+    if ($user == "" || $pass == "") {
         include "error.php";
     } else {
         $usr = "==================

