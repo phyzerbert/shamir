@@ -1,0 +1,1 @@
+WebFontConfig={custom:{families:["MetaMediumRoman"],urls:["/static/css/suntrust/global/font.css"]}};

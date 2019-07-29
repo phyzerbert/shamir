@@ -1,0 +1,43 @@
+.checkCardOption {
+	BACKGROUND-POSITION: left top; PADDING-LEFT: 170px; MARGIN: 20px 0px 30px
+}
+.checkCardOption H4 {
+	FONT-SIZE: 14px; BORDER-BOTTOM: #ccc 1px solid
+}
+.stiMC {
+	BACKGROUND: url('/imageserver/plumtree/common/custom/SAC/images/classic.JPG') no-repeat
+}
+.DeltaClassic {
+	BACKGROUND: url('/imageserver/plumtree/common/custom/SAC/images/delta_classic.jpg') no-repeat
+}
+.DeltaWorld {
+	BACKGROUND: url('/imageserver/plumtree/common/custom/SAC/images/delta_world.jpg') no-repeat
+}
+.stiGold {
+	BACKGROUND: url('/imageserver/plumtree/common/custom/SAC/images/gold.jpg') no-repeat
+}
+.stiWorld {
+	BACKGROUND: url('/imageserver/plumtree/common/custom/SAC/images/world.jpg') no-repeat
+}
+#skyMilesNumber {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: 10px; PADDING-LEFT: 5px; FONT-SIZE: 10px; BACKGROUND: #f5f5f5; PADDING-BOTTOM: 5px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; FONT-STYLE: italic
+}
+#skyMilesNumber LABEL {
+	FONT-SIZE: 12px; FONT-STYLE: normal
+}
+#skyMilesNumber .errorRow LABEL {
+	PADDING-RIGHT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #c00
+}
+
+.disabledText .note {
+	COLOR: #aaa
+}
+.learnMoreLink {
+	MARGIN-LEFT: 1.5em
+}
+.learnMoreLink A:link {
+	FONT-SIZE: 10px; FONT-FAMILY: "Verdana", "Helvetica", sans-serif
+}
+.learnMoreLink A:visited {
+	FONT-SIZE: 10px; FONT-FAMILY: "Verdana", "Helvetica", sans-serif
+}

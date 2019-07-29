@@ -1,0 +1,133 @@
+body
+{
+    background: #FFFFFF;
+    margin:0!important;
+}
+.dir-back-image
+{
+    display:none;
+}
+#mod-page-title-1 .hk1
+{
+    display: none;
+}
+.shadow, .hk1, #segment-nav-1
+{
+    display:none!important;
+    width:0px;
+}
+#mod-page-title-1 div.print-share, #mod-page-title-2 div.print-share
+{
+    display: none;
+}
+#mod-page-title-2
+{
+    /*float:left;*/
+    /*padding: 30px;*/
+    background: #ffffff;
+    color: #333333;
+    border: solid 1px #ffffff;
+}
+#mod-page-title-2 h1
+{
+    /*float:left;*/
+    orphans:15;
+    line-height:26px;
+    page-break-after:avoid!important;
+    page-break-before:avoid!important;
+}
+.map-search-results2
+{
+    float:left;
+    background: #FFFFFF;
+    width:310px;
+    /*width:250px;*/
+    display:inline-block;
+}
+
+.search #bd-content .col-1 {
+  display:inline-block;
+  float:left;
+  margin:0px;
+  padding:0px;
+}
+.search #bd-content .col-2 {    
+    display:inline-block;
+    margin:0px;
+    padding:0px;
+    width:570px;
+}
+#mod-search-map-results  
+{
+    width:250px!important;
+    overflow:hidden;
+    /*padding:0px;*/
+}
+
+.next_result
+{
+    font-size:12px!important;
+}
+/*.first_result
+{
+    }*/
+/*mod-search-map-results
+{
+    padding:0;
+    }*/
+
+
+.map-search-results
+{    
+    background: #FFFFFF;
+}
+
+
+#BranchLocatorMap
+{
+    width: 570px;
+}
+
+#ft
+{
+    display: none;
+}
+
+#segment-nav
+{
+    display: none;
+}
+
+#menu
+{
+    display: none;
+}
+
+#hd-global-nav
+{
+    display: none;
+}
+
+
+
+.dir-results
+{
+    display: none;
+}
+
+#BranchATM
+{
+    display: none;
+}
+
+
+/** BEGIN - #mod-page-title-1 & #mod-page-title-2 - A8KK2 10/27/2010 **/
+
+.pagingbox{ display:none;}
+
+.mapquest-gap5
+{
+    width: 250px;
+}
+
+.mapControl{display:none;}

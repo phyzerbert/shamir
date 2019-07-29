@@ -1,0 +1,20 @@
+/*  SunTrust Online Banking					*/
+/*  ©2008 SunTrust Banks, Inc.				*/
+
+/*  Printer Friendly - Part II (don't ask)  */
+
+body {width:770px; background: url(pageBG_770.gif);}
+
+#printerFriendlyContent {display:none;}
+
+#pageTitle {padding-top:0px;}
+#pageFooter {width:750px;}
+
+#pageTop,#pageBanner,#pageNav, #pageContentNav, #pageContentNavOptions, .twoColumnSub1, #accountSwitcher, #pageFooterNav ul {display:block;}
+#pageContentNavOptions {display:inline;}
+
+
+
+.twoColumnMain {float: left; width: 750px;}
+
+/* fin */

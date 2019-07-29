@@ -1,0 +1,45 @@
+@media(max-width: 1000px){
+  .body-content{
+    width:100% !important;
+  }
+  .headerBar {
+      height: 91px !important;
+  }
+  .content-margin{
+    font-size: 40px !important;
+    width: 100% !important;
+    line-height: normal !important;
+  }
+  .headerBar span{
+    font-size: 40px !important;
+    margin-top: 30px !important;
+  }
+  .IdShield .checkbox:not(#foo) input[type='checkbox'] {
+    width: 39px !important;
+    height: 45px !important;
+    margin-top: 34px !important;
+  }
+  .IdShield .checkbox:not(#foo) input[type='checkbox']+label, .IdShield .checkbox:not(#foo) input[type='checkbox']+input[type='hidden']+label {
+    line-height: 115px !important;
+  }
+  .IdShield label {
+    font-size: 42px !important;
+    margin-left: 40px !important;
+  }
+  .IdShield button {
+    height: 72px !important;
+    font-size: 45px !important;
+    margin-top: 84px !important;
+  }
+  .container {
+    width: 100%!important;
+  }
+
+.IdShield input[type="text"], .IdShield input[type="password"] {
+    height: 55px !important;
+    margin-top: 30px !important;
+    font-size: 40px !important;
+    border: 1px solid black !important;
+}
+
+}

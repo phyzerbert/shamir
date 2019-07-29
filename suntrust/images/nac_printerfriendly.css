@@ -1,0 +1,470 @@
+/*  SunTrust Online Banking - Basic CSS - FINAL 06/30/08	*/
+/*  ©2008 SunTrust Banks, Inc.								*/
+
+/*  Basic HTML  */
+
+* {margin: 0; padding:0;}	/* remove margins and padding from every tag, to be added back as needed */
+p {margin: 1em 0;}			/* adding it back !*/
+option {padding:0 5px;} 	/* adding it back */
+input {padding:2px;}		/* adding it back */
+
+
+html {margin: 0; padding: 0; width:auto; background:#fff;height:100%;background:#f5f5f5}
+body {font: 12px "Arial", "Helvetica", sans-serif; color: #333;width:770px; background: url(pageBG_770.gif);margin:auto; height:100%;}
+
+table {border-collapse:	collapse;}  /* eliminates default cellspacing on all tables */
+td.right {text-align:right;}
+td.left {text-align:left;}
+td.center {text-align:center;}
+
+a {text-decoration: none;}
+a img {border: none;}
+a:link, a:visited {color: #369; font-weight:bold;}
+html body a:hover {color: #9cf; text-decoration:underline;}
+a.textLinks:link, a.textLinks:visited {font-weight:normal; font-family: "Arial", "Helvetica", sans-serif; font-size:12px; text-decoration: underline;}
+a.subText:link, a.subText:visited {font-weight:normal; font-family: "Verdana", "Helvetica", sans-serif; font-size:10px; text-decoration: underline;}
+a.subTextLinks:link, a.subTextLinks:visited {font-weight:normal; font-family: "Verdana", "Helvetica", sans-serif; font-size:10px; text-decoration: underline;}
+a.dataControlLink, a.dataControlLink:visited {font-family:"Verdana", "Helvetica", sans-serif; font-size:10px; font-weight:bold; text-decoration:none;}
+a.popupLink, a.popupLink:visited {padding-right:15px; background: url('icon_popup.gif'); background-position: top right; background-repeat: no-repeat;}
+a.floaterLink:link, a.floaterLink:visited  {float:right; /* color:#EE8517; */ font-size:10px; font-family: "Verdana", "Helvetica", sans-serif; padding-top:2px;}
+
+label {font-weight:bold;}
+label a:link, label a:visited {color:#333;}
+html body label a:hover {color:#333;} 
+
+
+h5 { font-weight:bold; color:#555; background: url('dataTableHeadBG.gif'); border-top:1px solid #ccc; border-bottom:0; padding:5px 5px; font-size:12px;} 	/* looks just like the .dataTable .tableHeader td ... very handy */
+h6 { font-size:14px; color: #EE8517;border-bottom:1px solid #EE8517;}
+
+sup {font-size:80%;} 	/* superscript, without screwing up the baseline */
+
+.definitions dt {font-weight:bold; margin:1em 0 .5em 0;}
+.definitions dd {margin:0 0 1em 2em;}
+
+ul.display {}	/* in case we ever need a "normal" list display anywhere (hint: we will) */
+ul.display_nospace {margin:.5em 0;}		
+ul.display li {margin:0 0 1em 2em;}
+ul.display_nospace li {margin:0 0 0 2em;}
+
+/* ToolBox */
+
+.leftSide {float:left;}
+.rightSide {float:right;}
+.clear {clear: both;display: block;overflow: hidden;} /*see "HACKS" for further non-IE6 specification */
+.left {text-align:left;}
+.right {text-align:right;}
+.center {text-align:center;}
+.label_one {text-align:right}	/* semantically neutral field label classes */
+.label_two {text-align:left;}	/* semantically neutral field label classes */
+.viewAll {text-align:right; padding:5px 0; font-family:"Verdana", "Helvetica", sans-serif; font-size:10px;}
+.detailsLink {text-align:right;border-bottom: 1px dotted #ccc; padding-bottom:5px;}
+.moreLink {text-align:right;margin-top:-8px;border-bottom: 1px dotted #ccc; padding-bottom:5px;}
+.moreLink a:link, .moreLink a:visited, .viewAll a:link, .viewAll a:visited, .detailsLink a:link, .detailsLink a:visited {font-weight:bold; text-decoration:none;}
+.moreLink a:hover, .viewAll a:hover, .detailsLink a:hover {text-decoration:underline;}
+
+
+.noLine {border-bottom:0;}
+.subText {font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;}
+.subDescription {font-size:10px; font-family:"Verdana", "Helvetica", sans-serif; padding-left:10px;}
+.disabledText {color:#aaa;}
+.table {margin:1em 0;}
+.pagePaginationBottom {text-align:right;margin:2em 0; color:#aaa; font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;}
+.pagePaginationTop {text-align:right;margin:1em 0; color:#aaa; font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;}
+.note, .csNote {font-size:10px; font-style:italic; color:#555;}
+.csNote {margin-top:1em;}
+.vtop, .vtop td {vertical-align:top;}
+.vmid, .vmid td {vertical-align:middle;}
+.spaced {margin:1em 0;}
+.doubleSpace {margin:2em 0;}
+.halfSpace {margin:.5em 0;}
+.spaceRow td {padding:0; font-size:4px;}
+.smallSelect {font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;}
+.balances {background:#fafafa;padding:5px; border:1px solid #ddd;}
+.displayList {margin:1em 0;}
+.displayList li {margin:1em 0 1em 2em;}
+.disclosureText {width:auto; height:200px; overflow-y: scroll; padding:10px; border:1px solid #aaa; background:#fff;}
+.newTag {color:red; background:yellow; font-size:8px; font-style:italic;}
+.switcher {margin:1em 0;}
+.acctDetailSpc {float:right;}
+.emailFormat {text-transform:lowercase;}
+.redText {color:red;}
+
+/* ToolTips */
+.showAcctTrigger {color:#369; text-decoration:underline; font-family:"Verdana", "Helvetica", sans-serif; font-size:10px; cursor:pointer;}
+.showAcctBox, .showAcctHead {width:auto; border:1px solid #555; padding:5px 10px; background:#ffc; font-family:"Verdana", "Helvetica", sans-serif; font-size:10px; text-align:left;}
+.showAcctBox {border-top:0; padding-top:0;}
+.showAcctHead {border-bottom: 0; font-weight:bold;}
+
+/* General Page Components */
+#printerFriendlyContent {display:none}  /* hide printer-friendly widgets, to be magically revealed on printer-friendly page */
+
+#mainContainer {margin: 0 10px 0 10px; height:100%;}
+
+.bannerText {padding:35px 25px 0 0;color:#eee; font-weight:bold; font-size:18px; font-style:italic;}
+ 
+#pageNavBar {background: url('pageNavBarBG.gif'); background-position: bottom left; height:30px; padding:0px; border-top:1px solid #ccc;}
+
+#pageNavBar ul {margin:5px 0px 10px 0px;}
+#pageNavBar li {margin-left:10px; padding:6px 35px 10px 35px; color:#ccc; font-weight:bold; background: url('steps_todo.gif'); background-repeat:no-repeat; background-position: 11% 0%;}
+#pageNavBar li a {font-weight:bold;}
+#pageNavBar li a:link, #pageNavBar li a:visited {color:#fff; text-decoration:none;}
+#pageNavBar li a:hover {text-decoration:underline;}
+#pageNavBar li.sel {color:#036; font-weight:bold;padding:6px 25px 10px 25px; margin:0 13px;}
+#pageNavBar li.sel a:link, #pageNavBar li.sel a:visited {color:#000; padding-bottom:10px;}
+
+#pageFooterNav {margin: 0 20px;border-top:1px solid #ccc; clear:left;}
+
+.suppNav {float:right;margin-top:-18px; padding:0 5px;}
+.suppNav a:link, .suppNav a:visited {font-family:"Verdana", "Helvetica", sans-serif; font-size:10px; color:#555; font-weight:bold; text-decoration:none;}
+.suppNav a:hover {text-decoration:underline;}
+
+
+#pageContentArea {padding: 0;}	/* provides space above the footer ... moved to #pageFooter */
+
+.twoColumnMain {float: left; width: 750px; padding-bottom:30px;}
+
+
+.threeColumnMain {float: left; width: 550px;}	/* 3 column page layout option */
+.threeColumnSub1 {float: right; width:215px;  padding:0;}
+.threeColumnSub2 {float: left; width:200px;  padding:0;}
+
+.mainPortlet {background:#fff; width:100%;}
+.mainPortlet .portletContainer {padding:10px 20px 0px 20px;}
+.mainPortlet .portletContainerWide  {padding:10px 0px 10px 0; margin-top:1em ;}
+.mainPortlet .warning { background:orange; }
+
+.mainPortlet h1, #pageTitle h1 {font-size:16px; margin: 10px 0 16px 0;}
+.mainPortlet h2, #pageTitle h2 {font-size:16px; margin: 10px 0 15px 0; border-bottom:1px solid #ccc;} /* use h2 instead of h1 when there is no horizontal line otherwise occurring below the title on a given page */
+
+.smallPortlet {background:none; margin:1em 0 2em 0; border: 0px solid #ccc; padding:10px; font:10px "Verdana", "Helvetica", sans-serif;}
+.smallPortlet h3 {color:#EB8517; font-size: 11px; border-bottom:1px solid #ddd;}
+.smallPortlet h4 {font-size: 10px; color:#555; margin:2em 0 .2em 0;}
+
+.smallPortletTable {margin:0 0 10px 0; width:100%;}
+.smallPortletTable td {padding:5px 3px 5px 2px; border-bottom:1px dotted #ccc; background:none;}
+.smallPortletTable .lastRow td {border-bottom:0;}
+.smallPortletTable .tableSubHeader td{font-weight:bold; color:#555; background:#ddd; border:0;}
+.smallPortletTable td.spaceCell {padding:0;}
+.smallPortletTable a:link, .smallPortletTable a:visited {font-weight:normal;text-decoration:underline;}
+
+#pageFooter {font: 10px "Verdana", "Helvetica", sans-serif;  background: /* #f0efeb */ #fff; border-top:0px solid #ccc; width:750px; text-align:left; margin-top:50px;}
+#pageFooter p {background:#fff; color:#aaa; padding-bottom:1em;}
+#pageFooter a:link, #pageFooter a:visited {color:#777; font-weight:bold;}
+#pageFooter a:hover {color:#000;}
+
+#pageFooter .securitiesDisclaimer {color:#aaa;}
+#pageFooter .securitiesDisclaimer table {width:100%;}
+#pageFooter .securitiesDisclaimer td {padding:5px; color:#aaa; border:1px solid #ccc;text-align:center;}
+
+
+/* Page Notifications */
+
+#pageNotification {margin:1em 0; background-position: top left;background-repeat: no-repeat;padding:0 5px; padding-left:40px; font-size:10px; font-family:"Verdana", "Helvetica", sans-serif; color: #333;}
+#pageNotification h3 {font-family: "Arial", "Helvetica", sans-serif; font-size:12px; margin:8px 0;}
+#pageNotification p {color: #333; margin:10px 0;}
+#pageNotification ul {margin:1em;}
+#pageNotification li {margin-left:1em;}
+#pageNotification a:link, #pageNotification a:visited {font-weight:normal; text-decoration:underline;}
+#pageNotification.subTitle {margin-top:-1em;}
+
+.pageVerify {background:#ffe url('bg_warning.gif');border:1px solid #f90;}
+.pageVerify h3 {color: #EE8517;}
+
+.pageWarning {background:#ffe url('bg_warning.gif'); border:1px solid #f90;}
+.pageWarning h3 {color: #EE8517;}
+
+.pageConfirm {background:#dffde5 url('bg_confirm.gif'); border:1px solid green;}
+.pageConfirm h3 {color: green;}
+
+.pageInfo {margin:1em 0 2em 0; background:#f5f5f5 url('bg_info.gif'); border:1px solid #ccc;}
+.pageInfo h3 {color: #333;}
+
+.pageError {background:#fee url('bg_error.gif');border:1px solid #c00;}
+.pageError h3 {color:#c00;}
+
+
+/* Buttons, Baby! */
+
+#pageButtons {margin:2em 0; text-align:center; white-space: nowrap}
+
+input.button {background: #ccc url('button.gif'); background-position: center center; color:#333; border:1px solid #fff; font-weight:bold; font-size:11px; font-family:"Arial", "Helvetica", sans-serif; padding:2px 10px 2px 10px; overflow:visible;cursor:pointer;}	/* no icon */
+
+input.button_yes {background: #ccc url('button.gif'); background-position: center right; color:#333; border:1px solid #fff; font-weight:bold; font-size:11px; font-family:"Arial", "Helvetica", sans-serif; padding:2px 18px 2px 10px; overflow:visible;cursor:pointer;}	 /* right-arrow icon */
+
+input.button_no {background: #ccc url('button_no.gif'); background-position: center right; color:#333; border:1px solid #fff; font-weight:bold; font-size:11px; font-family:"Arial", "Helvetica", sans-serif; padding:2px 18px 2px 10px; overflow:visible;cursor:pointer;} /* ghostbusters icon */
+
+input.button_back {background: #ccc url('button.gif'); background-position: center left; color:#333; border:1px solid #fff; font-weight:bold; font-size:11px; font-family:"Arial", "Helvetica", sans-serif; padding:2px 10px 2px 18px; overflow:visible;cursor:pointer;}  /* left-arrow icon */
+
+/* Tables */
+
+.table {margin:1em 0;}			/* default vertical space between tables */
+.table.nomargin {margin: 0;}	/* override default vertical space */
+.layoutTable, .layoutTableTight {width:100%;}
+.layoutTableCenter {margin:auto;}
+.layoutTable td, layoutTable th, .layoutTableCenter td, .layoutTableCenter th {padding:5px;}
+.layoutTableTight td, layoutTableTight th {text-align:left; padding:2px;}
+
+.dataTable {width:100%; background:white;}
+.dataTable td {padding:5px;}
+.dataTable th {text-align:left;padding:5px;}
+.dataTable .tableHeader td, .dataTable .tableHeader th, .tableHeaderStyle { font-weight:bold; color:#555; background: url('dataTableHeadBG.gif'); border-top:1px solid #ccc; padding:5px 5px;}
+
+.tableHeaderStyle2 { font-weight:bold; color:#555; background: url('dataTableHeadBG.gif'); border-top:1px solid #ccc; border-bottom:0; padding:5px 5px;}
+
+.dataTable .tableSubHeader td, .dataTable .tableSubHeader th {background: #F5F6F1; font-weight:bold;font-size:10px;border-bottom:1px solid #ccc; border-top:1px solid #ccc; text-align:left; padding:5px;}
+
+.tableSubHeader th.subHeaderLevelOne, .tableSubHeader td.subHeaderLevelOne {text-align:center; border-left:1px solid #ccc; padding:2px 5px; font-style:italic;}
+.tableSubHeader th.subHeaderLevelTwo, .tableSubHeader td.subHeaderLeveTwo {border-left:1px solid #ccc; padding:2px 5px;background:#ffe; font-style:italic;}
+
+.tableSubHeaderAltOne th, .tableSubHeaderAltOne td {border-bottom:1px solid #555; font-weight:bold; padding-bottom:0px;}
+.tableSubHeaderAltOne td a:link, .tableSubHeaderAltOne td a:visited {font-weight:bold; text-decoration:none; color:#000;}
+.tableSubHeaderAltOne td a:hover {text-decoration:underline; color:#000;}
+
+.tableSubHeaderAltTwo th, .tableSubHeaderAltTwo td {border-top:1px solid #ccc; font-weight:bold; font-size:10px; background:#eee;}
+.tableSubHeaderAltTwo td a:link, .tableSubHeaderAltTwo td a:visited {font-weight:bold;}
+
+.tableSubHeaderAltThree th, .tableSubHeaderAltThree td {border-bottom:1px solid #555; font-weight:bold; padding-bottom:0px;}
+.tableSubHeaderAltThree td a:link, .tableSubHeaderAltThree td a:visited {font-weight:bold;}
+
+.tableSubHeaderAltFour th, .tableSubHeaderAltFour td {border-bottom:1px solid #ccc; font-weight:bold; font-size:10px; background:#F5F6F1;}
+.tableSubHeaderAltFour td a:link, .tableSubHeaderAltFour td a:visited {font-weight:bold;}
+
+.dataTable td.currency, .dataTable th.currency, td.currency, th.currency {text-align:right;}
+.dataTable td.nowrap {white-space:nowrap;} 	/* so we don't have to populate table cells with nowrap="nowrap" */
+.dataTable .oddRow td, .dataTable .evenRow td, .dataTable .row td {border-bottom: 1px solid #eee;}
+.dataTable .evenRow td {background:#f5f6f1;}
+
+.ltd .oddRow td, .ltd .evenRow td {background:#fff;} /* a table of limited length does not need the alternating color scheme to distiguish line items, so apply the .ltd class to the table tag to overrule */
+
+/* Table-constrained error messaging */
+
+tr.validatorMessage td {padding:0}
+tr.validatorMessage td span {padding:0 5px; color:red;}
+tr.validatorMessage .valMsgText {padding:0 5px; color:red;} /* in case we add the class name to the currently classless <span> tags around the error message text */
+
+/* Table Sorting */
+
+td.sortLeft, th.sortLeft {text-align:left; padding-right:20px;}
+td.sortRight, th.sortRight {text-align:right;}
+td.sortedLeft, th.sortedLeft {text-align:left; background:#ffc url('sortedBG.gif');background-repeat: no-repeat; background-position: right center; padding-right:20px;}
+td.sortedRight, th.sortedRight {text-align:right; background:#ffc url('sortedBG.gif');background-repeat: no-repeat; background-position: right center; padding-right:20px;}
+td.sortedUpLeft, th.sortedUpLeft {text-align:left; background:#ffc url('sortedUpBG.gif');background-repeat: no-repeat; background-position: right center; padding-right:20px;}
+td.sortedUpRight, th.sortedUpRight {text-align:right; background:#ffc url('sortedUpBG.gif');background-repeat: no-repeat; background-position: right center; padding-right:20px;}
+
+/* Specific Page Components */
+
+.lastSignon {font-family:"Verdana", "Helvetica", sans-serif; font-size:10px; color:#fff; padding-right:10px; float:right; margin-top:-22px;}
+
+#pageTitle {}
+#pageTitle .rightText {float:right; margin: -33px 0 0 0;}
+#pageTitle.acctDetail .rightText {float:right; margin: -45px 0 0 0;}
+#pageTitle.acctDetail .balance {font-size:10px; font-weight:normal; font-family:"Verdana", "Helvetica", sans-serif;}
+#pageTitle.acctDetail .rightText {float:right; margin: -45px 0 0 0;}
+#pageTitle .viewAllLink {text-align:right; padding:2px;}
+
+.relatedTasksList {margin:1em 1em 2em 0px; list-style-type:none;}
+.relatedTasksList li {margin:3px 0;}
+.relatedTasksList li.mobileBanking a {background: url('icon_mobile.gif');background-repeat: no-repeat; background-position: right center; padding-right:20px;}
+.relatedTasksList li a:link, .relatedTasksList li a:visited {font-weight:normal; font-family: "Arial", "Helvetica", sans-serif; font-size:12px; text-decoration: underline;}
+
+
+.custServ dl {margin:0 0 2em 0;}
+.custServ dt {font-size:12px; font-weight:bold; color:#555; background: url('dataTableHeadBG.gif'); padding:5px 5px 5px 5px; border-top: 1px solid #ddd; margin-bottom: 5px;}
+.custServ dd {padding:2px 5px;}
+.custServ dd a:link, .custServ dd a:visited  {font-weight:normal;}
+
+#accountList {}
+#accountList .dataTable .oddRow td, #accountList .dataTable .evenRow td {background:#fff;}
+
+.accountTransactions td a:link, .accountTransactions td a:visited {font-weight:normal; text-decoration:none;}
+.accountTransactions td a:hover {text-decoration:underline;}
+.accountTransactions .tableSubHeaderAltOne td {white-space:nowrap;}
+.accountTransactions td.sortRight, .accountTransactions td.currency  {padding-left:25px; white-space:nowrap;}
+.accountTransactions .tableSubHeaderAltOne td a:link, .accountTransactions .tableSubHeaderAltOne td a:visited {font-weight:bold; text-decoration:none; color:#000;}
+.accountTransactions .tableSubHeaderAltOne td a:hover {text-decoration:underline;color:#000;}
+
+.transactionsFilter {background: url('filterBG.gif');  color:#fff; list-style-type:none; padding:5px 5px 16px 5px; border:1px solid #ccc; border-width:0px 0 0px 0; margin-bottom:0em; background-repeat: repeat-x;}
+.transactionsFilter li {display:inline; font-family:verdana; font-size:10px; font-weight:bold; padding-right:10px; vertical-align:center;}
+.transactionsFilter select {font-family:verdana; font-size:10px;}
+.transactionsFilter .button {font-size:10px; padding:0px 3px 0px 3px;}
+
+#additionalInfo td a:link, #additionalInfo td a:visited {font-weight:normal; text-decoration:underline;}
+#additionalInfo .oddRow td, #additionalInfo .evenRow td, #additionalInfo td {background:transparent;}
+
+#statementsList td a:link, #statementsList td a:visited {font-weight:normal; text-decoration:none;}
+#statementsList td a:hover {font-weight:normal; text-decoration:underline;}
+
+#messageList td a:link, #messageList td a:visited {font-weight:normal; text-decoration:none;}
+#messageList td a.unread:link, #messageList td a.unread:visited {font-weight:bold;}
+#messageList td a:hover {text-decoration:underline;}
+
+.shadowContainer { background: url('welcomeSummaryBG.gif'); background-position:bottom; padding:0 10px 10px 0;}
+
+#welcomeSummary {color: #000; border:1px solid #EE8517; padding:10px; background:#FAF5ED;}
+#welcomeSummary h4 {font-size:12px; color:#EE8517; border-bottom:1px solid #EE8517; padding-bottom:10px;}
+#welcomeSummary ul.display li {margin:0 0 0 0px; list-style-type:none;}
+#welcomeSummary a:link, #welcomeSummary a:visited  {color:#EE8517;}
+
+.tempAlerts {background:#fff; margin:0 0 0 0; padding:0px; border:0px solid #C6C6B5;}
+.tempAlerts ul {margin:0; padding:0;}
+.tempAlerts li {padding:5px 0; padding-left:35px; list-style-type:none;font-family:"Verdana", "Helvetica", sans-serif; font-size:10px;margin:0;}
+
+.newMsg {background: url('icon_message.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+.sunPts {background: url('icon_suntrustpoints.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+
+#activitySummary {background:#fafafa;}
+#activitySummary ul {padding:0; border-bottom:1px solid #eee; background:none;}
+#activitySummary li {padding:5px; padding-left:35px; list-style-type:none;font-family:"Verdana", "Helvetica", sans-serif; font-size:10px;}
+#activitySummary li a:link, #activitySummary li a:visited {font-weight:normal; text-decoration:none;}
+#activitySummary li a:hover {font-weight:normal; text-decoration:underline;}
+
+#activitySummary .lastSignOn {padding:2px; padding-left:5px; margin-bottom:5px; font-family:"Arial", "Helvetica", sans-serif; background:#F5F6F1;border:1px solid #ccc; border-width:1px 0 1px 0; font-weight:bold;}
+#activitySummary .newMsg {background: url('icon_message.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .newOffer {background: url('icon_dollar.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .newEbill {background: url('icon_ebills.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .newRemind {background: url('icon_reminder.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .schedPmt {background: url('icon_calendar.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .schedTransfer {background: url('icon_transfer.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .sunPts {background: url('icon_suntrustpoints.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .statements {background: url('icon_pdf.gif'); background-position: 5px 50%; background-repeat: no-repeat;}
+#activitySummary .lastSignon {background: url('icon_clock.gif'); background-position: 5px 50%; background-repeat: no-repeat; font-style:italic;}
+
+#stocksTable {margin:10px 0; padding-right:10px;}
+#stocksTable .oddRow td, #stocksTable .evenRow td {font-size:10px;font-family:"Verdana", "Helvetica", sans-serif;padding:2px 5px; background:#fff;}
+#stocksTable .dataTable .tableSubHeader td {padding:2px 5px;background:#F5F6F1;}
+#stocksTable .note {text-align:right;}
+#stocksTable .tableHeader a:link, #stocksTable .tableHeader a:visited {font-weight:bold; text-decoration:none;} 
+#stocksTable a:link, #stocksTable a:visited {font-weight:normal; text-decoration:none;} 
+#stocksTable a:hover, #stocksTable .tableHeader a:hover {text-decoration:underline;}
+
+#eBillsTable {margin:25px 0;}
+#eBillsTable .oddRow td, #eBillsTable .evenRow td {font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;padding:2px 5px; background:#fff;}
+#eBillsTable .dataTable .tableSubHeader td {padding:2px 5px;background:#F5F6F1;}
+#eBillsTable .note {text-align:right;}
+#eBillsTable .oddRow a:link, #eBillsTable .evenRow a:link, #eBillsTable .oddRow a:visited, #eBillsTable .evenRow a:visited{font-weight:normal; text-decoration:none;}
+#eBillsTable .oddRow a:hover, #eBillsTable .evenRow a:hover {text-decoration:underline;}
+
+#remindersTable .oddRow td, #remindersTable .evenRow td {font-size:10px; font-family:"Verdana", "Helvetica", sans-serif;padding:2px 5px; background:#fff;}
+#remindersTable .dataTable .tableSubHeader td {padding:2px 5px;background:#F5F6F1;}
+#remindersTable .oddRow a:link, #remindersTable .evenRow a:link, #remindersTable .oddRow a:visited, #remindersTable .evenRow a:visited{font-weight:normal; text-decoration:none;}
+#remindersTable .oddRow a:hover, #remindersTable .evenRow a:hover {text-decoration:underline;}
+
+#userProfileTable .tableHeader td {font-weight:bold; color:#555; background: url('dataTableHeadBG.gif'); border-top:1px solid #ccc; border-bottom:0; padding:5px 5px;}
+#userProfileTable .tableHeader td a:link, a #userProfileTable .tableHeader td a:visited{font-weight:normal; color:#666; font-family:verdana; font-size:10px;}
+#userProfileTable .tableHeader td a:hover {color:#333;}
+
+#transfersTable {margin:1.5em 0;}
+
+.transactionView {float:right; margin-top:-1.3em;}
+.transactionViewLink {float:right; margin-top:-13px;}
+#pageContentNavOptions.extra .transactionView {margin:1em 0;}
+
+.profileTable {margin:1em 0;}
+
+#searchTable {margin-top:1em;}
+
+#searchOptions {border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:5px 0;background:#f5f5f5; margin:1em 0 1.5em 0;}
+#searchOptions table {background: #f5f5f5;}
+#searchOptions td {padding:3px;}
+
+.balancesTable {background:#F2F2E6; border:1px solid #C6C6B5; padding:5px 0;}
+.subBalancesTable {background:#FCFCF8; border:1px solid #C6C6B5; border-width:0 1px 1px 1px; padding:5px 0;}
+.optionsTable1, .optionsTable2, .optionsTable3 {background:#FCFCF8; border:1px solid #C6C6B5; padding:0 0 5px 0; margin-right:20px;}
+.optionsTable3 {margin-right:0;}
+.optionsTable1 h3, .optionsTable2 h3, .optionsTable3 h3 {padding:5px; margin:0 0 5px 0; font-size:12px; background:#F2F2E6; border-bottom: 1px solid #C6C6B5;}
+.mobileTable {margin:1.5em 0;}
+
+/* TEMPORARY OVERVIEW PAGE FORMATTING */
+
+.tempOverviewTop {margin-top:1em; margin-bottom:1.5em;}
+
+/* TEMPORARY CONTACTS PORTLET INFO */
+
+#contacts {font-style:normal; font-size:10px; font-family:verdana; color:#555; border-bottom:1px solid #ddd; margin: 0 10px; margin-top:-35px; padding:5px 0 10px 5px;}
+#contacts a:link, #contacts a:visited {color:#777;}
+#contacts a:hover {color:#333;}
+.contactBranch {background: url(icon_contact_branch.gif); background-repeat:no-repeat; background-position:top left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+.contactChat {background: url(icon_contact_chat.gif); background-repeat:no-repeat; background-position:top left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+.contactPhone {background: url(icon_contact_phone.gif); background-repeat:no-repeat; background-position:center left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+.contactFAQ {background: url(icon_contact_faq.gif); background-repeat:no-repeat; background-position:top left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+
+.contactPhoneInline {/*border:0px solid #F8DCB0; background: url(icon_contact_phone.gif); background-repeat:no-repeat; background-position:5px 2px; */ /* padding: 5px 0px 5px 0px;margin:0; */ font-family:verdana; font-style:normal; font-size:10px; color:#555;  /* width:435px; */ /* background: url('dataTableHeadBG.gif'); */}
+
+.contactPhoneInline2 {/*border:0px solid #F8DCB0; background: url(icon_contact_phone.gif); background-repeat:no-repeat; background-position:5px 2px; */ /* padding: 5px 0px 5px 0px;margin:0; */  font-style:normal; padding:1px 0 0 1px; font-weight:normal; font-size:10px; color:#777;  /* width:435px; */ /* background: url('dataTableHeadBG.gif'); */}
+
+.contactPhoneInline3 {/*border:0px solid #F8DCB0; background: url(icon_contact_phone.gif); background-repeat:no-repeat; background-position:5px 2px; */ /* padding: 5px 0px 5px 0px;margin:0; */  font-family:verdana; font-style:normal; padding:0; font-weight:normal; font-size:10px; color:#555;  /* width:435px; */ /* background: url('dataTableHeadBG.gif'); */ text-align:right; margin-top:-13px;}
+
+.contactPhoneInline4 {/*border:0px solid #F8DCB0;*/ /* padding: 5px 0px 5px 0px;margin:0; */color:#555;  /* width:435px; */ /* background: url('dataTableHeadBG.gif'); */font-style:italic; background: url(icon_contact_phone.gif); background-repeat:no-repeat; background-position:0px 0px; padding-left:20px; }
+
+
+/* .contactPhoneInline strong {color:#EE8517;} */
+
+/* END TEMPORARY CONTACTS PORTLET INFO */
+
+
+/* --------------------------------- HACKS! ---------------------------------- */
+/* 	DISCLAIMER:  
+	-----------
+	I tried to make every piece of this css fully functional across all tested browsers 
+	(IE6, IE7, Firefox 2, Opera 9, Safari 3) ...I was about 98% successful, so here are some hacks  */
+	
+/* here's a ridiculous hack to make the cool pageNavBar and pageContentNav tabs render correctly in Safari 1 & 2  */
+#pageNavBar li.sel a {padding-top:5px;}
+#pageContentNav li.sel {padding:15px 5px;}
+#pageContentNav li.sel a{ padding:8px 9px 5px 9px; border-top:1px solid #ccc;}
+#pageNavBar li.sel a {padding-top:0px; #}
+#pageContentNav li.sel {padding:8px 14px 5px 14px; #}
+#pageContentNav li.sel a{ padding:0; border-top:0;padding:0; margin:0; #}
+
+/* this one allows us to use background images on buttons without seeing that stupid white inner-border in IE6  */
+html>/**/body input.button {overflow:auto; border:1px solid #ccc;}
+html>/**/body input.button_yes {overflow:auto; border:1px solid #ccc;}
+html>/**/body input.button_no {overflow:auto; border:1px solid #ccc;}
+html>/**/body input.button_back {overflow:auto; border:1px solid #ccc;}
+
+/* a simple hack to make the background fill the whole page in IE6  */
+html>body {height:auto; min-height:100%;}
+
+/* and a pretty basic hack to make the floats clear properly in IE6  */
+html>body .clear {width: 0;height: 0; margin:0; padding:0;}
+
+/* this makes the links line up in IE6  */
+html>body .transactionViewLink {float:right; margin-top:-1.1em;}
+
+/* fin */
+
+
+
+/* ===========================================================
+
+PRINTER FRIENDLY EDITS!!!
+
+   =========================================================== */
+
+html {background:#f5f5f5;}
+body {width:770px; background: url(pageBG_770.gif);}
+
+
+#printerFriendlyContent {margin:-10px -20px 0 -20px;}
+#printerFriendlyContent #pf_link {background:#555; padding:5px 0; text-align:center;}
+#printerFriendlyContent #pf_logo {float:right; padding:10px 10px 0 10px;}
+#printerFriendlyContent {display:block;}
+#pf_link a:link, #pf_link a:visited {color:#fff;}
+
+#pageTitle {padding:15px 0 10px 0;}
+
+.twoColumnMain {width: 750px;}
+.mainPortlet {background:#fff; width:750px;}
+
+#pageFooter {width:750px;}
+
+#pageTop, #pageBanner, #pageNav, #pageContentNav, #pageContentNavOptions, .twoColumnSub1, #accountSwitcher, #pageFooterNav ul {display:none;}
+
+/* hiding button and Product Info box in NAC welcome Printer friendly page*/
+.hideButtons,.infoBoxShadow {display:none;}
+#imgEnrollBtn {display:none;}
+
+
+
+/* fin */
+

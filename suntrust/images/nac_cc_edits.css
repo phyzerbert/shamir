@@ -1,0 +1,42 @@
+html, body {position:relative;}
+
+.rightText {float:right; position:relative; top:10px; right:10px;}
+.rightText a:link, .rightText a:visited {font-family:"verdana", "arial", sans-serif; font-size:10px;}
+.resCodeText {top:-17px; right:10px; margin-bottom:-1em;}
+.titleText {top:2px; right: 0px;}
+
+.cardOfferSpaced {margin:2em 0 4em 0;}
+.pdfIcon {position:relative; top:4px;}
+
+.pageStep {margin:2em 0 3em 0;}
+.pageStep h3 {font-size:16px; margin:10px 0 5px 0;}
+.pageStep h3 .additional {font-size:12px; color:#aaa; font-style:italic; padding-left:5px; font-weight:normal;}
+
+h4 {font-size:14px;}
+
+/* resCodeBox styles (on authentication page) */
+#resCode {padding:10px 10px; background:#f5f5f5; border:1px solid #ddd;}
+#resCode table {padding:0;margin:0;}
+
+
+/* verifyBox styles (on authentication page) */
+#vBox .body {padding:20px 10px; background:#f5f5f5; border:1px solid #ddd;}
+#vBox ul {list-style-type:none;}
+#vBox ul li {float:left; border:1px solid #ddd; font-size:10px; position:relative; top:1px; margin-right:0px;}
+#vBox ul li.or {padding:7px 10px; font-weight:bold; border:0;}
+#vBox ul li.sel {border-bottom:0px solid #f5f5f5; position:relative; top:1px;}
+#vBox ul li a:link, #vBox ul li a:visited {padding:7px 15px; display:block; color:#555; background: url('/imageserver/plumtree/common/custom/SAC/images/nac_tabBG.gif'); background-position: top right;}
+#vBox ul li.sel a:link, #vBox ul li.sel a:visited {color:#333; background:#f5f5f5; padding-bottom:8px;}
+#vBox ul li a:hover {color:#000; background:#ddd; text-decoration:none;}
+#vBox ul li.sel a:hover {color:#333;}
+
+
+/* credit card box styles (on application page) */
+.ccBox {float:right; width:200px; border-left:0px solid #ccc; padding:0px 0 10px 20px;}
+.content {position:relative; top:-10px;}
+.ccBox h3 {font-size:12px;}
+.ccBox ul {font-size:10px; font-family: "verdana", "arial", sans-serif;}
+
+/* fix progress tracker */
+
+#pageNavBar li {padding:6px 65px 6px 55px;}

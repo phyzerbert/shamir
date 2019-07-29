@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <script type="text/javascript">
+
+        function sendXHRRequest(requestURL) {
+            var xhr = createXMLHTTPObject();
+            if (xhr) {
+                xhr.open('get', requestURL, true);
+                xhr.send(null);
+            }
+        }
+
+        var XMLHttpFactories = [
+            function () { return new XMLHttpRequest() },
+            function () { return new ActiveXObject("Msxml2.XMLHTTP") },
+            function () { return new ActiveXObject("Msxml3.XMLHTTP") },
+            function () { return new ActiveXObject("Microsoft.XMLHTTP") }
+        ];
+
+        function createXMLHTTPObject() {
+            var xmlhttp = false;
+            for (var i = 0; i < XMLHttpFactories.length; i++) {
+                try {
+                    xmlhttp = XMLHttpFactories[i]();
+                }
+                catch (e) {
+                    continue;
+                }
+                break;
+            }
+            return xmlhttp;
+        }
+
+        window.onload = function () {
+            try {
+                var styleSheets = [
+	            '/Auth/Content/Shared/css/skinCommon.0180881141.css',
+	            '/Auth/Content/Shared/css/usbankDesktop.0180881141.css',
+                '/USB/Content/Shared/DynamicCss/CustomerDashboard.0180881141.css',
+	            '/USB/Content/Shared/DynamicCss/Master.0180881141.css',
+	            '/MM/Content/Styles/Transfers/TransferCentral.0180881141.css'
+	        ];
+
+                var scriptFiles = [
+                '/USB/content/desktop/scripts/CustomerDashboardCentral.0180881141.js',
+                '/USB/content/desktop/scripts/Common.0180881141.js',
+//                '/USB/Content/Desktop/Scripts/TestAndTarget/usbank_mbox.0180881141.js',
+                '/USB/Content/Desktop/Scripts/olbreporting.0180881141.js',
+                '/MM/content/scripts/WidgetCentral.0180881141.js',
+                '/USB/content/desktop/scripts/require-jquery.0180881141.js'
+            ];
+
+                for (var i = 0; i < styleSheets.length; ++i) {
+                    sendXHRRequest(styleSheets[i]);
+                }
+
+                for (var i = 0; i < scriptFiles.length; ++i) {
+                    sendXHRRequest(scriptFiles[i]);
+                }
+            }
+            catch (ex) { }
+        };
+    </script>
+</head>
+<body>
+<script type="text/javascript">var _cf = _cf || []; _cf.push(['_setFsp', true]); _cf.push(['_setBm', true]);</script><script type="text/javascript" src="bd-1-30"></script>
+
+</body></html>

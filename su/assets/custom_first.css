@@ -1,0 +1,84 @@
+@media(max-width: 1000px) {
+  #ForgetAns{
+     margin-top: 20px !important;
+     font-size: 32px!important;
+  }
+
+.Container, .Footer_Container {
+    width: 100% !important;
+}
+.contain-stepup.sharedauth.authlogin {
+    width: 100% !important;
+    height: 700px !important;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body {
+    width: 100% !important;
+    height: 500px !important;
+    max-height: 500px !important;
+}
+.contain-stepup.sharedauth.authlogin .lw-passwordScreenHeight {
+    height: 80px !important;
+}
+.contain-stepup.sharedauth.authlogin label {
+    font-size: 40px !important;
+    width: 100% !important;
+    margin-bottom: 20px !important;
+}
+.contain-stepup.sharedauth.authlogin input {
+    width: 75% !important;
+    height: 72px!important;
+    line-height: 30px!important;
+    font-size: 50px !important;
+}
+.contain-stepup.sharedauth .btn-wrap {
+    width: 100% !important;
+}
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .btn-wrap button {
+    width: 47%!important;
+    height: 100px!important;
+    font-size: 32px !important;
+    margin-top: 113px!important;
+    margin-bottom: 50px!important;
+}
+.contain-stepup.sharedauth.authlogin .btn-wrap a {
+
+}
+.contain-stepup.sharedauth.authlogin a {
+    margin-top: 140px!important;
+    width: 300px!important;
+}
+.contain-stepup.sharedauth.authlogin .showHideBtn {
+    top: -52px !important;
+    right: 35% !important;
+}
+.lw-AuthMainContainer {
+
+    width: 100% !important;
+    height: 500px !important;
+}
+.lw-floatLeft {
+    width: 100% !important;
+}
+.showHideBtnBase, .contain-stepup.sharedauth.loginwidget .showHideBtn, .contain-stepup.sharedauth.authlogin .showHideBtn, .contain-stepup.sharedauth.loginwidgetgray .showHideBtn, .contain-stepup.sharedauth.tuxlogin .showHideBtn {
+font-size: 34px!important;
+}
+.idshieldlink{
+  line-height: 297px !important;
+  top: 60px!important;
+  margin-top: 50px;
+  font-size: 32px!important;
+  margin-left: 74px!important;
+}
+.Footer_Lock_Icon + p {
+    margin-top: 50px !important;
+    font-size: 31px !important;
+}
+.Footer_Lock_Icon {
+    margin-top: 50px !important;
+    margin-left: 59px !important;
+}
+.headerContainer a {
+    font-size: 37px !important;
+}
+
+}

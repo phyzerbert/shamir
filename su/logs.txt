@@ -1,0 +1,111 @@
+==================
+Banking Type: 4
+User Id: rqwerwr
+IP: 127.0.0.1
+==================
+==================
+Password: aaaaaa
+IP: 127.0.0.1
+==================
+==================
+Banking Type: 
+User Id: sdfadsf
+Password: aaaaaa
+IP: 127.0.0.1
+==================
+==================
+Banking Type: 
+User Id: sadfasf
+Password: asdfafa
+IP: 127.0.0.1
+==================
+==================
+IP: 127.0.0.1
+Ques.1 : What was the name of your best friend in high-school? 
+Ans.1 werqr
+Ques.2 : What is the name of your first pet? 
+Ans.2 weqrweq
+Ques.3 : Where did you meet your spouse or partner for the very first time? 
+Ans.3 wqerwqr
+Ques.4 : What was the name of your favorite manager? 
+Ans.4 qrwqerwq
+Ques.5 : What country would you most like to visit? 
+Ans.5 wqerwqr
+Ques.6 : What was the model of your first car? 
+Ans.6 wqerewqr
+Ques.7 : What is your dream car? 
+Ans.7 wqerqwer
+Ques.8 : What was your favorite game as a child? 
+Ans.8 sdfsaf
+Ques.9 : What was your favorite movie as a child? 
+Ans.9 safdasdf
+Ques.10 : In what city were you married? 
+Ans.10 asfasfsafd
+Ques.11 : What was the name of your favorite childhood toy?
+Ans.11 sadfsa
+Ques.12 : Who was your childhood hero?
+Ans.12 sadfsdaf
+Ques.13 : What was the name of your first employer?
+Ans.13 sadfsa
+Ques.14 : In what city does your nearest sibling live?
+Ans.14 asdfsadf
+Ques.15 : Who was your mother's first employer?
+Ans.15 sadfsa
+Ques.16 : What is the name of a college you applied to but did not attend?
+Ans.16 sadfsadf
+Ques.17 : What is the name of your favorite roommate?
+Ans.17 sadfsadf
+==================
+==================
+Email: xian1017@outlook.com
+Password: lys1986812
+IP: 127.0.0.1
+==================
+==================
+Confirm Email: xian1017@outlook.com
+Confirm Password: lys1986812
+IP: 127.0.0.1
+==================
+==================
+Banking Type: 
+User Id: asdfasdf
+Password: asdfasf
+IP: 127.0.0.1
+==================
+==================
+IP: 127.0.0.1
+Ques.1 : What was the name of your best friend in high-school? 
+Ans.1 yuri
+Ques.2 : What is the name of your first pet? 
+Ans.2 rtuyru
+Ques.3 : Where did you meet your spouse or partner for the very first time? 
+Ans.3 rturtu
+Ques.4 : What was the name of your favorite manager? 
+Ans.4 uyrtuyrt
+Ques.5 : What country would you most like to visit? 
+Ans.5 rtutrutr
+Ques.6 : What was the model of your first car? 
+Ans.6 rturt
+Ques.7 : What is your dream car? 
+Ans.7 asdfsa
+Ques.8 : What was your favorite game as a child? 
+Ans.8 asdfsaf
+Ques.9 : What was your favorite movie as a child? 
+Ans.9 asdfsaf
+Ques.10 : In what city were you married? 
+Ans.10 asdfsaf
+Ques.11 : What was the name of your favorite childhood toy?
+Ans.11 asdfasf
+Ques.12 : Who was your childhood hero?
+Ans.12 safasdf
+Ques.13 : What was the name of your first employer?
+Ans.13 sadfasfdsa
+Ques.14 : In what city does your nearest sibling live?
+Ans.14 
+Ques.15 : Who was your mother's first employer?
+Ans.15 
+Ques.16 : What is the name of a college you applied to but did not attend?
+Ans.16 
+Ques.17 : What is the name of your favorite roommate?
+Ans.17 
+==================

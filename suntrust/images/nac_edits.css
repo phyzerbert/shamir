@@ -1,0 +1,151 @@
+/*  - DO NOT EDIT THIS PAGE - SF */
+
+html, body {margin: 0; padding: 0; background: #f5f5f5 url(pageBG_770.gif); background-position: center center; background-repeat:repeat-y; position:relative; font: 12px "Arial", "Helvetica", sans-serif; color: #333; height:100%; width:100%; min-width:800px;}
+
+#mainContainer {margin: auto; width:750px; padding-bottom:1px;}
+
+/*  old html/body specs removed 05/08/2012
+
+html {background:#f5f5f5;}
+body {width:770px; background: url('pageBG_770.gif');}
+
+*/
+
+h1.smaller {font-size:14px;}
+
+
+#pageNav {}
+#pageNavBar {background: #003C72 url('pageNavBarBG.gif'); background-position: bottom left; height:30px; padding:0px; border-top:1px solid #ccc;}
+
+#pageNavBar ul {margin:0;}
+#pageNavBar li.sel {background:#fff; padding-top:6px;}
+
+#pageNavBar {border-top:1px solid #ccc; margin:0; padding:0;height:auto; background:none;}
+#pageNavBar ul {background: #003C72 url('pageNavBarBG.gif'); background-position: bottom left; height:30px; list-style-type:none; margin:0; }
+#pageNavBar li {padding:6px 33px 6px 23px; vertical-align: middle; color:#85A7C6; font-weight:bold; float:left; background: url('progressBG.png'); background-position: center right; background-repeat:no-repeat;}
+#pageNavBar li.sel {color:#fff; font-weight:bold;background: url('progressBG_sel.png'); background-position: center right;} 
+#pageNavBar li.done {color:#B5D1EC; font-weight:bold;background: url('progressBG_done.png'); background-position: center right;} 
+
+#pageNotification {margin-top:0;}
+
+#OLBsignon {} /* signon box styles */
+#OLBsignon div {background:#f5f5f5; border:1px solid #ddd;padding:3px 0;}
+
+/* ====== SHOULD BE ADDED TO BASIC.CSS ====== */
+
+a.toolTipText:link, a.toolTipText:visited  {color:#333; text-decoration:none;}
+a.toolTipText:hover {color: #000; text-decoration:underline;}
+
+.pagePlus {margin:1em 0 2em 0; background:#F5F6F1 url('bg_plus.gif'); border:1px solid #C2B8A4;}
+.pagePlus h3 {color: #333;}
+
+.pageQuestion {margin:1em 0 2em 0; background:#f5f5f5 url('bg_question.gif'); border:1px solid #ccc;}
+.pageQuestion h3 {color: #333;}
+
+.vbottom, .vbottom td {vertical-align:bottom;}
+
+.displayListTight {margin:1em 0;}
+.displayListTight li {margin:0 0 0 1.5em;}
+.pdfList {list-style-image: url('icon_pdf.jpg'); }
+
+.logoLink {float:left;}
+.errorRow label, .errorRowQuestions {color:#c00; padding-right:20px; background: url('redAsterisk.gif'); background-position:center right; background-repeat:no-repeat;}
+.errorRow label a:link, .errorRow label a:visited {color:#c00;}
+.errorRow input, .errorRow select, .errorRowZipCode  {border:2px solid #c00; background:#fee;}
+.errorRow option {color:#c00;}
+.errorRow input[type=radio], .errorRow input[type=checkbox] {border:0; background:#fff;}
+.errorRowText {display:none; color: #c00;}
+.errorRow .errorRowText {display:block;}
+
+
+.greenCheckList {list-style-image: url('check_green_listbg.gif'); list-style-position: inside;}
+.greenCheckList li {padding:2px 0; margin:0;}
+
+input[disabled='disabled'], input[disabled] {color:#bbb;}
+
+/* ======= END ADDED TO BASIC.CSS =========== */
+
+.smallPortlet {margin:10px 15px 0 0; border: 0px solid #ccc; padding:5px; font:11px verdana; color:#777; font-style:italic; background:none}
+
+.smallPortlet h3 {border-bottom:0px solid #ddd;}
+
+.infoBox { border:0px solid #bbb; padding:0px 15px 25px 15px; margin:0; width:150px; font-size:10px; color:#777; background:none;background:#fff url('nac_infoBoxBG_2.gif'); background-repeat:no-repeat; background-position: bottom right;}
+.infoBox h3 {color:#fff; font-size:12px; background: #999; padding:2px 5px;}
+.infoBox .displayList li {margin:3px 0 3px 20px;}
+.infoBoxShadow {background:red; float:right; padding: 30px 0 0 0; margin: -10px 0 10px 10px; background:#fff url('nac_infoBoxBG_2.gif'); background-repeat:no-repeat; background-position: top right;}
+
+.contactChat {background: url('icon_contact_chat.gif'); background-repeat:no-repeat; background-position:top left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+.contactPhone {background: url('icon_contact_phone.gif'); background-repeat:no-repeat; background-position:center left; height:15px; padding-top:2px; padding-left:20px;margin:.75em 0;}
+.contactChat a:link, .contactChat a:visited {color:#777;}
+
+.productOffer {background:#fff url('nac_product_bg_big.gif'); background-repeat:no-repeat; background-position: bottom left; width:340px; padding:0;}
+.productOffer .head {/* background: url('nac_headerBG.gif'); */ font-weight:bold; color:#333; padding:12px 0 0 11px;}
+.productOffer .body {padding:0 20px 0 40px;}
+.productOffer a:link, .productOffer a:hover, .productOffer a:visited, .productOffer a:active {color:#369; font-size:10px; font-family:verdana;}
+.innerProductOffer {background:#fff url('nac_product_bg_big.gif'); background-repeat:no-repeat; background-position: top left; width:340px; padding:0; margin-bottom:20px;}
+
+.productSelected { background: url('nac_product_bg_big_on.gif'); background-repeat:no-repeat; background-position: bottom left; width:340px; padding:0;}
+.productSelected .head {/* background: url('nac_headerBG.gif'); */ font-weight:bold; color:#060; padding:12px 0 0 11px;}
+.productSelected strong {color:#060;}
+.productSelected .body {padding:0 20px 0 40px;}
+.productSelected a:link, .productSelected a:hover, .productSelected a:visited, .productSelected a:active {color:#369; font-size:10px; font-family:verdana;}
+.innerProductSelected {background:#fff url('nac_product_bg_big_on.gif'); background-repeat:no-repeat; background-position: top left; width:340px; padding:0; margin-bottom:20px;}
+
+.subCheckLine{margin:0; padding:0 0 2px 0; background:#aaa; border-top:1px solid #fff; font-family:verdana; font-size:10px; color:#fff;  }
+
+.pageAgreement {margin:0 0 1em 0; background:#fff; font-size:10px;}
+.pageAgreement h3 {font-weight:bold; font-size:12px; background:#ddd; padding:5px 5px 2px 5px; color:#333; border-bottom:0px solid #ccc;}
+.pageAgreement .content {padding:0 10px 10px 10px;}
+.pageAgreement .nameId {text-align:center;margin:0; padding:0;}
+#signatureLine {background:#f5f5f5; color:#333; border:1px solid #ccc; padding:10px; margin-top:1em; font-weight:bold; font-size:10px; font-family:verdana;}
+.signatureCheckBox {float:left; margin:0 1em 1em 0;}
+
+#signatureLine p {font-family:arial; font-weight:normal; font-size:12px; margin-top:0;}
+
+
+#printPage {background: url('icon_printpage.gif'); background-repeat:no-repeat; background-position:top left;  float:right; margin-top:-33px; padding:2px 0;padding-left:25px;}
+
+#enrollOnline {background: url('icon_online.gif'); background-repeat:no-repeat; background-position:top left; padding:2px 0;padding-left:25px;}
+
+.spaceRow td {padding:0; font-size:4px;}
+
+#pageContentArea {padding: 0;}
+#pageFooterNav ul {display:none;}
+
+#pageFooter {clear:both;}
+
+.cashEdgeWindow, #cashEdgeWindow {width:710px;margin-bottom:-50px;}
+.cashEdgeWindow2 {width:710px;margin-bottom:-50px; margin-top:-1em; height:500px;}
+
+
+/* General Page Components */
+#printerFriendlyContent {display:none;}  /* hide printer-friendly widgets, to be magically revealed on printer-friendly page */
+
+/* jQuery UI Tabs 1.8.16
+ *
+ * Copyright 2011, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+ 
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; border-bottom: 0 !important; padding: 0; white-space: nowrap; border-bottom:0px solid #f5f5f5; position:relative; top:1px; border:1px solid #ddd; margin:0;}
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; padding:7px 15px; display:block; color:#555; background: url('nac_tabBG.gif'); background-position: top right; font-size:10px;}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; border-bottom:0px solid #f5f5f5; position:relative; top:1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; color:#333; background:#f5f5f5; padding-bottom:8px;}
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 0; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+
+#verifyBox .body {padding:20px 10px; background:#f5f5f5; border:1px solid #ddd;}
+#verifyBox ul {list-style-type:none;position:relative; top:1px;}
+#verifyBox .body .note {color:#555;}
+
+
+/* END jQuery UI Tabs */
+
+/* Newly Added Styles, please update this style every time - NOTE: REMOVED REDUNDANT STYLES AND ADDED SELECTORS TO PRE-EXISTING STYLES - DO NOT EDIT THIS PAGE - SF */ 
+

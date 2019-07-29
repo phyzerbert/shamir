@@ -1,0 +1,219 @@
+/*
+    Defining Global level Modal CSS
+    Mobile first approach: CSS written without media query will apply to mobile. 
+*/
+/*
+    This file is auto-generated.
+    Do not directly edit this file!
+    Any changes made directly here will be lost.
+    Typography style from:
+    http://usb-ux.com/guide/docs/omni/ays/global-styles-ays/ays-dashboard-typography/
+*/
+.usb-module__modal .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: auto;
+  outline: 0; }
+.usb-module__modal .modal.fade .modal-dialog, .usb-module__modal .modal.in .modal-dialog {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+.usb-module__modal .modal-content {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 1;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0 solid #999;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 101%;
+  overflow-y: auto; }
+  @media (min-width: 767px) {
+    .usb-module__modal .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); } }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-content {
+      opacity: 0.9;
+      height: auto; } }
+.usb-module__modal .modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto; }
+.usb-module__modal .modal-dialog {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 0; }
+  @media (min-width: 767px) {
+    .usb-module__modal .modal-dialog {
+      width: 55%;
+      height: auto;
+      margin: 30px auto; } }
+  @media (min-width: 992px) {
+    .usb-module__modal .modal-dialog {
+      width: 45%;
+      height: auto;
+      margin: 30px auto; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-dialog {
+      width: 35%;
+      height: auto;
+      margin: 30px auto; } }
+.usb-module__modal .modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-backdrop {
+      background-color: #000000;
+      opacity: 0.65; } }
+.usb-module__modal .modal-header {
+  /* Extend the close icon from usb common */ }
+  .usb-module__modal .modal-header .modal-header-title {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    padding-left: 58px;
+    padding-right: 58px; }
+    @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+      .usb-module__modal .modal-header .modal-header-title {
+        top: 40px;
+        padding-left: 78px;
+        padding-right: 78px; } }
+  .usb-module__modal .modal-header .modal-header-close {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    width: 23px;
+    right: 20px;
+    z-index: 12; }
+    @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+      .usb-module__modal .modal-header .modal-header-close {
+        right: 40px;
+        top: 40px; } }
+  .usb-module__modal .modal-header .usb-icons-close2 {
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 23px;
+    z-index: 12; }
+.usb-module__modal .modal-hr1px--dark-gray {
+  height: 1px;
+  background-color: #333333;
+  margin-top: 90px; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-hr1px--dark-gray {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 85px; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-hr1px--dark-gray {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 79px; } }
+.usb-module__modal .modal-body {
+  position: relative;
+  margin: 20px 0 0;
+  padding: 0 20px; }
+  @media (min-width: 767px), (min-width: 992px), (min-width: 1200px) {
+    .usb-module__modal .modal-body {
+      margin: 40px 0 0;
+      padding: 0 40px; } }
+.usb-module__modal .modal-footer {
+  text-align: left;
+  padding: 0 20px 20px; }
+  @media (min-width: 767px), (min-width: 992px) {
+    .usb-module__modal .modal-footer {
+      padding: 0 40px 20px; } }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-footer {
+      padding: 20px 40px; } }
+.usb-module__modal .modal-link {
+  display: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0066b3;
+  text-decoration: underline; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-link {
+      display: inline; } }
+.usb-module__modal .usb-button--secondary {
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .usb-button--secondary {
+      margin-right: 15px; } }
+.usb-module__modal .modal__banker-logout {
+  height: auto;
+  line-height: 17px; }
+.usb-module__modal .modal-margin-between-btn {
+  margin-bottom: 16px; }
+.usb-module__modal .modal-content-margin {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 1200px) {
+    .usb-module__modal .modal-content-margin {
+      margin-bottom: 0; } }
+@media (min-width: 767px) {
+  .usb-module__modal .modal-sm {
+    width: 300px; }
+ }
+@media (min-width: 1200px) {
+  .usb-module__modal .modal-lg {
+    width: 900px; }
+ }
+.usb-icons-close3:before {
+  content: "";
+  background: url("../../Images/Shared/CLOSE%20ICON.svg") no-repeat;
+  height: 23px;
+  width: 23px;
+  background-size: 23px;
+  display: inline-block;
+}
+.usb-icons-close3 {
+    background:none !important;
+    top: 40px !important;
+    right: 40px !important;
+}
+.modal-hr1px-display{
+    display:block !important;
+}
+.modal-paragraph{
+    font-size:12px !important;
+    line-height: 18px !important;
+}
+.modal-headerdisplay{
+    margin-left: 0px !important;
+    margin-right:0px !important;
+    border:none !important;
+    padding:0px !important;
+    min-height:0px !important;
+}
+.modal-footerdisplay{
+    padding: 20px 40px !important;
+}
+ .thirdPartySpeedBump .modal-content{
+    opacity:0.9 !important;
+    max-height:none !important;
+}
+/*# sourceMappingURL=usb-module__modal.css.map */

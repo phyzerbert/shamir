@@ -1,0 +1,2144 @@
+body.sharedauth-modal-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  pointer-events: none;
+}
+
+body.sharedauth-modal-open .modal {
+  margin: 0 !important;
+}
+
+body.sharedauth-modal-open .modal-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  overflow: auto !important;
+  z-index: 9;
+}
+
+@media (max-width: 750px) {
+  body.sharedauth-modal-open .modal-dialog {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 751px) {
+  body.sharedauth-modal-open .modal-dialog {
+    width: 500px !important;
+    min-width: 500px;
+    margin-top: 30px !important;
+    bottom: initial;
+  }
+}
+
+body.sharedauth-modal-open .modal-content {
+  transform: none !important;
+  opacity: 1 !important;
+  max-height: initial !important;
+  top: 0;
+  min-height: 100%;
+  height: initial !important;
+  pointer-events: all;
+  border: solid 2px #5e5e5e;
+  box-sizing: border-box;
+  padding: 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 750px) {
+  body.sharedauth-modal-open .modal-content {
+    border: solid 2px #FFF;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 751px) {
+  body.sharedauth-modal-open .modal-content {
+    min-height: auto;
+  }
+}
+
+body.sharedauth-modal-open .modal-backdrop {
+  background-color: #000000;
+  opacity: 0.65;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/**
+    DE - SE: Card 73, 103 - Pilot User Login Screen changes - STARTS
+*/
+#txtPassword::-ms-reveal {
+  display: none;
+}
+
+#txtPassword {
+  font-size: 12px !important;
+}
+
+.showHideBtnBase, .contain-stepup.sharedauth.loginwidget .showHideBtn, .contain-stepup.sharedauth.authlogin .showHideBtn, .contain-stepup.sharedauth.loginwidgetgray .showHideBtn, .contain-stepup.sharedauth.tuxlogin .showHideBtn {
+  cursor: pointer !important;
+  background: #fff !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 12px ;
+  position: relative;
+  float: right;
+  height: 25px !important;
+  width: 44px !important;
+  color: #007CBE !important;
+  padding: 0 0 0 7px !important;
+  margin: 0 !important;
+  line-height: 0;
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  font-weight: 400 !important;
+}
+
+.showHideBtnBase:focus, .contain-stepup.sharedauth.loginwidget .showHideBtn:focus, .contain-stepup.sharedauth.authlogin .showHideBtn:focus, .contain-stepup.sharedauth.loginwidgetgray .showHideBtn:focus, .contain-stepup.sharedauth.tuxlogin .showHideBtn:focus {
+  box-shadow: 0px 0px 0px 0px transparent !important;
+  -webkit-appearance: none !important;
+  text-decoration: none !important;
+}
+
+.showHideBtnShadowBase, .contain-stepup.sharedauth.loginwidget button#btnShow, .contain-stepup.sharedauth.authlogin button#btnShow, .contain-stepup.sharedauth.loginwidgetgray button#btnShow, .contain-stepup.sharedauth.tuxlogin button#btnShow {
+  border: none !important;
+  box-shadow: 0px 0px 0px 2px transparent;
+  -webkit-box-shadow: 0px 0px 0px 2px transparent;
+  -mox-box-shadow: 0px 0px 0px 2px transparent;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.showHideBtnShadowBase:focus, .contain-stepup.sharedauth.loginwidget button#btnShow:focus, .contain-stepup.sharedauth.authlogin button#btnShow:focus, .contain-stepup.sharedauth.loginwidgetgray button#btnShow:focus, .contain-stepup.sharedauth.tuxlogin button#btnShow:focus {
+  box-shadow: none !important;
+}
+
+.showHideBtnShadowBase:hover, .contain-stepup.sharedauth.loginwidget button#btnShow:hover, .contain-stepup.sharedauth.authlogin button#btnShow:hover, .contain-stepup.sharedauth.loginwidgetgray button#btnShow:hover, .contain-stepup.sharedauth.tuxlogin button#btnShow:hover {
+  background: #fff !important;
+  text-decoration: none !important;
+}
+
+/**
+    DE - SE: Card 73, 103 - Pilot User Login Screen changes - ENDS
+*/
+.contain-stepup.sharedauth {
+  background: #FFF;
+  height: initial;
+  min-height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+@media (min-width: 751px) {
+  .contain-stepup.sharedauth {
+    min-height: initial;
+    position: relative;
+    /*fix for d22175*/
+    height: 100%;
+  }
+}
+
+.contain-stepup.sharedauth * {
+  font-family: 'Helvetica neue', 'Helvetica', 'Arial', Sans-serif;
+  color: #333333;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-tap-highlight-color: none;
+  text-align: left;
+}
+
+.contain-stepup.sharedauth hr {
+  border: solid 1px #333;
+  padding: 0 5px;
+}
+
+.contain-stepup.sharedauth h1, .contain-stepup.sharedauth h2, .contain-stepup.sharedauth h3 {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #0C2074;
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth h1, .contain-stepup.sharedauth h2, .contain-stepup.sharedauth h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+.contain-stepup.sharedauth h1:focus, .contain-stepup.sharedauth h2:focus, .contain-stepup.sharedauth h3:focus {
+  outline: none;
+}
+
+.contain-stepup.sharedauth p, .contain-stepup.sharedauth label {
+  font-family: 'HelveticaNeue', sans-serif;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.contain-stepup.sharedauth p {
+  margin: 0 0 15px;
+}
+
+.contain-stepup.sharedauth p:last-of-type {
+  margin: 0;
+}
+
+.contain-stepup.sharedauth label {
+  font-weight: bold;
+  line-height: 24px;
+  display: block;
+}
+
+.contain-stepup.sharedauth a {
+  text-decoration: none;
+  color: #007CBE;
+  font-size: inherit;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contain-stepup.sharedauth a:focus {
+  text-decoration: underline;
+  color: #044E7C;
+  outline: none;
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth a {
+    display: block;
+  }
+}
+
+.contain-stepup.sharedauth ul {
+  margin: 0;
+  border: none;
+  /*defect fix 22249*/
+}
+
+.contain-stepup.sharedauth ul li {
+  list-style: none;
+  padding-right: 20px;
+  margin: 10px 0 0;
+  font-size: 15px;
+  border: none;
+  line-height: 20px;
+}
+
+.contain-stepup.sharedauth div:focus {
+  outline: none;
+}
+
+.contain-stepup.sharedauth button {
+  font-family: 'HelveticaNeue-Bold', sans-serif;
+  color: #FFFFFF;
+  letter-spacing: -0.3px;
+  background-color: #007CBE;
+  border-radius: 5px;
+  border: solid 1px #007CBE;
+  height: 44px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: text;
+  -webkit-user-select: text;
+  font-weight: bold;
+  padding: 0 50px;
+  margin: 0 15px 0 0;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contain-stepup.sharedauth button * {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.contain-stepup.sharedauth button:hover {
+  background-color: #044E7C;
+  /*defect fix #20026*/
+  border: solid 1px #044E7C;
+}
+
+.contain-stepup.sharedauth button:focus {
+  text-decoration: underline;
+  border: solid 1px #FFF;
+  box-shadow: 0 0 0 2px #044E7C;
+  background-color: #044E7C;
+  outline: none;
+}
+
+.contain-stepup.sharedauth button:focus:hover {
+  border: solid 1px #FFF;
+}
+
+.contain-stepup.sharedauth button:disabled {
+  background-color: #a1a1a1;
+  color: #fff;
+  cursor: default;
+  border: solid 1px #a1a1a1;
+}
+
+.contain-stepup.sharedauth button.secondary {
+  background-color: #FFF;
+  color: #007CBE;
+  border: solid 2px #007CBE;
+}
+
+.contain-stepup.sharedauth button.secondary:hover {
+  color: #044E7C;
+  border: solid 2px #044E7C;
+}
+
+.contain-stepup.sharedauth button.secondary:focus {
+  text-decoration: underline;
+  border: solid 1px #044E7C;
+  box-shadow: 0 0 0 1px #FFF, 0 0 0 3px #044e7c;
+  outline: none;
+  color: #044E7C;
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button {
+    width: 100%;
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button:last-of-type {
+    margin: 0 0 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth button:first-of-type {
+    margin: 15px 0;
+  }
+}
+
+.contain-stepup.sharedauth button.close {
+  border: none;
+  background: none;
+  z-index: 12;
+  padding: 0;
+  border-radius: 5px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 35px;
+  height: 35px;
+  margin: 0;
+}
+
+.contain-stepup.sharedauth button.close:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #127dbc;
+}
+
+.contain-stepup.sharedauth button.close * {
+  margin: 0 auto;
+  float: none;
+  display: block;
+}
+
+.contain-stepup.sharedauth input {
+  font-size: 14px;
+  color: #555;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: solid 1px #999;
+  outline: none;
+  margin: 0 0 5px;
+  display: block;
+  background: #FFF;
+  cursor: text;
+}
+
+.contain-stepup.sharedauth input:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px #42B9F0;
+  border: solid 1px #0C2074;
+  padding: 10px;
+  margin: 0 0 5px;
+  height: 40px;
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth input {
+    width: 100% !important;
+    position: initial;
+  }
+}
+
+.contain-stepup.sharedauth .btn-wrap {
+  margin: 20px 0;
+}
+
+.contain-stepup.sharedauth .btn-wrap p {
+  display: inline-block;
+}
+
+@media (max-width: 750px) {
+  .contain-stepup.sharedauth .btn-wrap {
+    margin: 0;
+  }
+  .contain-stepup.sharedauth .btn-wrap p {
+    margin: 0 0 15px;
+  }
+}
+
+.contain-stepup.sharedauth .error {
+  color: #C00D1D;
+  margin: 10px 0;
+  border: none;
+  font-weight: bold;
+}
+
+.contain-stepup.sharedauth .error a {
+  color: #C00D1D;
+  text-decoration: underline;
+  display: inline;
+}
+
+.contain-stepup.sharedauth .error a:focus {
+  color: #A70F1E;
+  outline: solid 1px #A70F1E;
+}
+
+.contain-stepup.sharedauth .error.general {
+  margin: 20px;
+}
+
+.contain-stepup.sharedauth .alert {
+  margin: 0 auto;
+  max-width: 280px;
+}
+
+.contain-stepup.sharedauth .alert p, .contain-stepup.sharedauth .alert .p {
+  text-align: left;
+  padding: 0 0 0 40px;
+}
+
+.contain-stepup.sharedauth .icon {
+  transform: none;
+  width: 25px;
+  height: 25px;
+  padding: 3px;
+  margin-right: 3px;
+  background: none;
+}
+
+.contain-stepup.sharedauth .login-transmit {
+  display: none;
+}
+
+.contain-stepup.sharedauth .login-transmit-show {
+  display: none;
+}
+
+.contain-stepup.sharedauth .keypad-contain {
+  min-height: 200px;
+  width: 100%;
+  display: block;
+}
+
+@media (min-width: 751px) {
+  .contain-stepup.sharedauth .keypad-contain {
+    display: none;
+  }
+}
+
+.contain-stepup.sharedauth .authenticator-header {
+  padding: 45px 85px 45px 45px;
+}
+
+.contain-stepup.sharedauth .authenticator-body {
+  padding: 0 45px 45px;
+}
+
+.contain-stepup.sharedauth .authenticator-footer {
+  padding: 0 45px 45px;
+}
+
+.contain-stepup.sharedauth .authenticator-footer p.otp-footer {
+  display: block;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  color: #000 !important;
+  font-weight: 400 !important;
+  margin-top: 10px !important;
+  font-style: normal;
+}
+
+.contain-stepup.sharedauth .stepup_load_spinner {
+  background: url(../../Images/SharedAuthImages/ajax-loader.0180881141.gif);
+  position: fixed;
+  z-index: 999;
+  height: 1.5em;
+  width: 1.5em;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.contain-stepup.sharedauth .xmuiProgressForm {
+  height: 30px;
+}
+
+.contain-stepup.sharedauth .xmuiProgressForm span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 45px 0 0 35px;
+  font-size: 14px;
+}
+
+@media (max-width: 750px) {
+  .ews-stepup .sharedauth-omni.modal-dialog {
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0;
+    height: 100% !important;
+  }
+}
+
+@media (min-width: 751px) {
+  .ews-stepup .sharedauth-omni.modal-dialog {
+    width: 500px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    margin-top: 30px !important;
+    padding: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    height: initial !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .ui-mobile .ews-stepup .sharedauth-omni.modal-dialog {
+    /*fix for ipad overlay d22175*/
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+    z-index: 1000;
+    height: 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
+/*defect fix 19668,19673*/
+#stepupandroidsubmitbutton.login-button {
+  height: 44px;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 44px !important;
+  display: inline-block;
+}
+
+.ui-dialog.infoDialog.timeoutPosition {
+  z-index: 100001 !important;
+  pointer-events: auto !important;
+}
+
+.fade {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.transfersContainer .tabContainer * {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+#StepUpAssistance .customButton {
+  background-color: #007CBE;
+  /*defect fix 20026*/
+  border: #007CBE;
+  border-radius: 2px;
+  color: #FFF;
+  font-size: 17px;
+  height: 44px;
+  margin: 2% 0 0;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+  width: 25%;
+  cursor: pointer;
+}
+
+#StepUpAssistance .confirmation {
+  background: none repeat scroll 0 0 #f6fdf3;
+  border: 1px solid #1e850a;
+  margin-top: 0;
+  padding: 13px 15px;
+  width: 100%;
+  color: #21890D;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 21px;
+  display: inline-block;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+#StepUpAssistance .confirmation span.icon-success {
+  margin-right: 15px;
+  background-position: -265px -8px;
+  width: 21px;
+  height: 21px;
+  display: block;
+  vertical-align: middle;
+  float: left;
+}
+
+#StepUpAssistance .errorContainer {
+  background: none repeat scroll 0 0 #fee4e5;
+  border: 1px solid #ee0101;
+  margin-top: 0;
+  padding: 13px 15px;
+  width: 100%;
+  color: #9c0010;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 21px;
+  -webkit-border-radius: 4px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 4px;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+#StepUpAssistance .errorContainer span.error-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  display: inline-block;
+  float: left;
+}
+
+.contain-stepup.sharedauth.loginwidget {
+  height: 100%;
+  width: 100%;
+  clear: both;
+  background: #0c2074;
+  color: #FFF;
+  position: absolute;
+  font-family: Helvetica "Neue", sans-serif;
+  border-radius: 15px;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  padding: 5% 10%;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+
+.contain-stepup.sharedauth.loginwidget .login-transmit-hide {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidget .xmuiProgressForm span {
+  padding: 95px 0 0 35px;
+  font-size: 14px;
+}
+
+.contain-stepup.sharedauth.loginwidget .lw-AuthBody_Lock_Icon {
+  margin-right: 10px;
+}
+
+.contain-stepup.sharedauth.loginwidget .tux-Password-image {
+  height: 70px;
+  width: 100px;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.contain-stepup.sharedauth.loginwidget .tux-floatLeft {
+  float: left;
+}
+
+.contain-stepup.sharedauth.loginwidget .tux-Password-Phrase {
+  line-height: 28px;
+  font-size: 17px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.contain-stepup.sharedauth.loginwidget .login-transmit {
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidget .login-transmit h2, .contain-stepup.sharedauth.loginwidget .login-transmit h3 {
+  color: #FFF;
+  font-size: 18px;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  margin: 5px 0 15px;
+}
+
+.contain-stepup.sharedauth.loginwidget .login-transmit.transmit-disclosure {
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.contain-stepup.sharedauth.loginwidget .login-transmit-show {
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidget .lw-AuthLoginIcon {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidget .nvda-inlineblk div {
+  float: initial;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-header, .contain-stepup.sharedauth.loginwidget .authenticator-body, .contain-stepup.sharedauth.loginwidget .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.contain-stepup.sharedauth.loginwidget .lw-vs20.lw-placeholderIe8.lw-marginBottom18.lw-floatLeft {
+  width: 100%;
+}
+
+.contain-stepup.sharedauth.loginwidget .form-group.image-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+
+.contain-stepup.sharedauth.loginwidget div#imgSound {
+  left: 75px;
+  top: 45px;
+  position: absolute;
+}
+
+.contain-stepup.sharedauth.loginwidget .lw-vs8.lw-passwordImagePhrase.lw-floatLeft {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-footer p {
+  margin: 2% 0 0;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-footer p.otp-footer {
+  color: #FFF !important;
+}
+
+.contain-stepup.sharedauth.loginwidget h1, .contain-stepup.sharedauth.loginwidget h2, .contain-stepup.sharedauth.loginwidget h3, .contain-stepup.sharedauth.loginwidget p, .contain-stepup.sharedauth.loginwidget span, .contain-stepup.sharedauth.loginwidget label, .contain-stepup.sharedauth.loginwidget a, .contain-stepup.sharedauth.loginwidget button {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidget h1, .contain-stepup.sharedauth.loginwidget h2, .contain-stepup.sharedauth.loginwidget h3 {
+  font-weight: 600;
+}
+
+.contain-stepup.sharedauth.loginwidget span, .contain-stepup.sharedauth.loginwidget a {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF !important;
+}
+
+.contain-stepup.sharedauth.loginwidget a {
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.loginwidget a:hover {
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFF !important;
+}
+
+.contain-stepup.sharedauth.loginwidget p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  margin: 5px auto;
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidget p.error {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #FFF;
+  float: left;
+}
+
+.contain-stepup.sharedauth.loginwidget h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.contain-stepup.sharedauth.loginwidget h1.new-UX-header {
+  margin: 0 0 20px;
+}
+
+.contain-stepup.sharedauth.loginwidget label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 10px 0 5px;
+  width: 100%;
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidget .btn-wrap {
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.loginwidget button, .contain-stepup.sharedauth.loginwidget .btn {
+  background: #d74150 !important;
+  font-weight: bold !important;
+  white-space: normal;
+  font-size: 18px !important;
+  line-height: 28px;
+  color: #fff !important;
+  border: solid 1px #d74150 !important;
+  border-radius: 5px !important;
+  width: 100% !important;
+  clear: both;
+  text-decoration: none;
+  margin: 5% auto 0;
+  padding: 7px 0;
+  height: 42px !important;
+}
+
+.contain-stepup.sharedauth.loginwidget button:hover, .contain-stepup.sharedauth.loginwidget .btn:hover {
+  background: #EF3A50 !important;
+}
+
+.contain-stepup.sharedauth.loginwidget button:focus, .contain-stepup.sharedauth.loginwidget .btn:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #d74150 !important;
+  -moz-box-shadow: 0 0 1px 2px #d74150 !important;
+  box-shadow: 0 0 1px 2px #d74150 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.loginwidget button.secondary, .contain-stepup.sharedauth.loginwidget button.idshieldlink, .contain-stepup.sharedauth.loginwidget .btn.secondary, .contain-stepup.sharedauth.loginwidget .btn.idshieldlink {
+  color: #d74150;
+  border: solid 1px #d74150;
+  background: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidget button.secondary:hover, .contain-stepup.sharedauth.loginwidget button.idshieldlink:hover, .contain-stepup.sharedauth.loginwidget .btn.secondary:hover, .contain-stepup.sharedauth.loginwidget .btn.idshieldlink:hover {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidget button.secondary:focus, .contain-stepup.sharedauth.loginwidget .btn.secondary:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #d74150 !important;
+  -moz-box-shadow: 0 0 1px 2px #d74150 !important;
+  box-shadow: 0 0 1px 2px #d74150 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.loginwidget input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.contain-stepup.sharedauth.loginwidget input:focus {
+  outline: none !important;
+  border: solid 1px #0c2074 !important;
+  -webkit-box-shadow: 0 0 1px 2px #109cde !important;
+  -moz-box-shadow: 0 0 1px 2px #109cde !important;
+  box-shadow: 0 0 1px 2px #109cde !important;
+}
+
+.contain-stepup.sharedauth.loginwidget hr {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .lw-vs20 {
+  margin-top: 0;
+  padding-top: 0 !important;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password label {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  margin: 0;
+  width: 100%;
+  display: block;
+  font-style: normal;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password p.error {
+  margin: 2% 0 0 0;
+  font-size: 14px;
+  color: #FFF;
+  line-height: 18px;
+  float: left;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap {
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap button {
+  margin-bottom: 5%;
+}
+
+.contain-stepup.sharedauth.loginwidget .authenticator-body.transmit-password .btn-wrap .lw-AuthForgotId a:hover {
+  padding-top: 0 !important;
+}
+
+.contain-stepup.sharedauth.loginwidget .showHideBtn {
+  top: -38px;
+  right: 10px;
+  font-size: 14px !important;
+}
+
+.contain-stepup.sharedauth.loginwidget #txtPassword {
+  font-size: 14px !important;
+}
+
+.contain-stepup.sharedauth.authlogin {
+  clear: both;
+  float: left;
+  overflow: visible;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  width: 325px;
+  height: 330px;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+
+.contain-stepup.sharedauth.authlogin:focus {
+  outline: none;
+}
+
+.contain-stepup.sharedauth.authlogin .login-transmit-hide {
+  display: none;
+}
+
+.contain-stepup.sharedauth.authlogin .xmuiProgressForm span {
+  position: absolute;
+  top: 52px;
+  left: 40px;
+  color: #000;
+  font-size: 14px !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+}
+
+.contain-stepup.sharedauth.authlogin .login-transmit {
+  display: block;
+}
+
+.contain-stepup.sharedauth.authlogin .login-transmit h2, .contain-stepup.sharedauth.authlogin .login-transmit h3 {
+  color: #287db0;
+  font-size: 14px;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  line-height: 18px;
+  margin: 5px 0;
+}
+
+.contain-stepup.sharedauth.authlogin .login-transmit.transmit-disclosure {
+  font-size: 10px;
+  line-height: 12px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.contain-stepup.sharedauth.authlogin .login-transmit-show {
+  display: block;
+}
+
+.contain-stepup.sharedauth.authlogin a.login-transmit-show {
+  display: inline;
+}
+
+.contain-stepup.sharedauth.authlogin .transmit-error-contain {
+  float: left;
+  width: 100%;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-header, .contain-stepup.sharedauth.authlogin .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body {
+  position: relative;
+  display: block;
+  width: 325px;
+  height: 290px;
+  padding: 10px 20px 0 60px;
+  border-right: 1px solid #e2e2e2;
+  overflow: auto;
+  box-sizing: border-box;
+  max-height: 290px;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-footer {
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  right: 25px;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-footer p.otp-footer {
+  font-size: 8px;
+  line-height: 10px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.contain-stepup.sharedauth.authlogin .authlogin-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.contain-stepup.sharedauth.authlogin h1, .contain-stepup.sharedauth.authlogin h2, .contain-stepup.sharedauth.authlogin h3, .contain-stepup.sharedauth.authlogin p, .contain-stepup.sharedauth.authlogin span, .contain-stepup.sharedauth.authlogin label, .contain-stepup.sharedauth.authlogin a, .contain-stepup.sharedauth.authlogin button {
+  color: #000;
+  letter-spacing: initial;
+}
+
+.contain-stepup.sharedauth.authlogin h1, .contain-stepup.sharedauth.authlogin h2, .contain-stepup.sharedauth.authlogin h3 {
+  font-weight: 600;
+}
+
+.contain-stepup.sharedauth.authlogin span, .contain-stepup.sharedauth.authlogin a {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.contain-stepup.sharedauth.authlogin a {
+  color: #0950a0;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.authlogin a:focus {
+  outline: 1px dotted black !important;
+}
+
+.contain-stepup.sharedauth.authlogin p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  margin: 5px auto;
+  font-family: sans-serif;
+}
+
+.contain-stepup.sharedauth.authlogin p.aboutotp {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.contain-stepup.sharedauth.authlogin p.error {
+  margin: 5px 0 0 0;
+  font-size: 12px;
+  color: red;
+  float: left;
+  line-height: 14px;
+}
+
+.contain-stepup.sharedauth.authlogin p.device-error {
+  margin: 13px 0 0 13px;
+  font-size: 12px;
+  color: red;
+}
+
+.contain-stepup.sharedauth.authlogin h1 {
+  color: #287db0;
+  font-size: 14px;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 5px 0 10px;
+}
+
+.contain-stepup.sharedauth.authlogin label {
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  width: 100%;
+  display: block;
+  font-style: normal;
+  padding: 0;
+  font-family: Helvetica-Neue, Helvetica, Arial, sans-serif;
+  line-height: 20px;
+}
+
+.contain-stepup.sharedauth.authlogin ul.mobile-list {
+  height: 120px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-top: 0;
+}
+
+.contain-stepup.sharedauth.authlogin ul.mobile-list li {
+  margin-top: 10px;
+}
+
+.contain-stepup.sharedauth.authlogin .btn-wrap {
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.contain-stepup.sharedauth.authlogin .btn-wrap p {
+  margin: 0 auto;
+}
+
+.contain-stepup.sharedauth.authlogin .btn-wrap a {
+  line-height: 50px;
+}
+
+.contain-stepup.sharedauth.authlogin button {
+  background: linear-gradient(to top, #0950a0 0%, #2b85bb 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#2b85bb', endColorstr='#0950a0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2b85bb), color-stop(100%, #0950a0)) !important;
+  background: -webkit-linear-gradient(top, #2b85bb 0%, #0950a0 100%) !important;
+  border: 1px solid #0950a0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+  width: auto;
+  height: 50px;
+  box-shadow: none;
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+.contain-stepup.sharedauth.authlogin button:hover {
+  background: linear-gradient(to top, #2b85bb 0%, #0950a0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#0950a0', endColorstr='#2b85bb') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0950a0), color-stop(100%, #2b85bb)) !important;
+  background: -webkit-linear-gradient(top, #0950a0 0%, #2b85bb 100%) !important;
+}
+
+.contain-stepup.sharedauth.authlogin button.secondary {
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  background: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#f0f0f0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%) !important;
+  border-radius: 4px !important;
+  font-size: 13px !important;
+  outline: medium none !important;
+  color: #0C2074 !important;
+  border: 1px solid #cdcdcd !important;
+}
+
+.contain-stepup.sharedauth.authlogin button.secondary:hover {
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#ffffff') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #ffffff)) !important;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 100%) !important;
+}
+
+.contain-stepup.sharedauth.authlogin button:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0950a0 !important;
+  -moz-box-shadow: 0 0 2px 1px #0950a0 !important;
+  box-shadow: 0 0 2px 1px #0950a0 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.authlogin .sa-secondary {
+  background: linear-gradient(to top, #ffffff 0%, #f0f0f0 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#ffffff', endColorstr='#f0f0f0') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f0f0f0)) !important;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%) !important;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  border-radius: 4px;
+  background-clip: padding-box;
+  padding: 15px;
+  color: #0C2074 !important;
+  cursor: pointer;
+  font-size: 14px !important;
+  outline: none;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold;
+  width: auto;
+  height: 50px;
+  border: 1px solid #cdcdcd !important;
+  box-shadow: none;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contain-stepup.sharedauth.authlogin .sa-secondary:hover {
+  background: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#f0f0f0', endColorstr='#ffffff') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f0f0f0), color-stop(100%, #ffffff)) !important;
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #ffffff 100%) !important;
+}
+
+.contain-stepup.sharedauth.authlogin .sa-secondary:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0950a0 !important;
+  -moz-box-shadow: 0 0 2px 1px #0950a0 !important;
+  box-shadow: 0 0 2px 1px #0950a0 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.authlogin input {
+  border: 1px solid #cdcdcd !important;
+  padding: 0 0 0 5px !important;
+  width: 195px ;
+  color: #666666;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  outline: none;
+  box-shadow: none !important;
+  border-radius: 2px !important;
+  background: #FFF;
+}
+
+.contain-stepup.sharedauth.authlogin input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #109cde !important;
+  -moz-box-shadow: 0px 0px 0px 2px #109cde !important;
+  box-shadow: 0px 0px 0px 2px #109cde !important;
+}
+
+.contain-stepup.sharedauth.authlogin hr {
+  display: none;
+}
+
+.contain-stepup.sharedauth.authlogin .lw-Lock_Icon {
+  margin: 20px 10px 0 20px;
+}
+
+.contain-stepup.sharedauth.authlogin .lw-AuthLoginIcon {
+  font-size: 24px;
+  line-height: 20px;
+  color: #0c2074;
+  font-weight: normal;
+  padding-top: 20px;
+}
+
+.contain-stepup.sharedauth.authlogin .lw-AuthForgotId a {
+  text-align: center;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  user-select: text;
+  -webkit-user-select: text;
+  /*padding: 15px;*/
+  cursor: pointer;
+  font-size: 14px !important;
+  /*outline: none;*/
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  /*height: 50px;*/
+  box-shadow: none;
+  margin: 20px 15px 0 0;
+  width: auto;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.authlogin .lw-AuthForgotId a:hover {
+  padding: 0 !important;
+  text-decoration: underline !important;
+  margin: 20px 15px 0 0;
+}
+
+.contain-stepup.sharedauth.authlogin #imgSound.sound_img {
+  cursor: pointer !important;
+  position: absolute;
+  top: 34px;
+  left: 112px;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .lw-passwordImage {
+  margin: 0 10px 0 0;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .btn-wrap {
+  float: left;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .btn-wrap button {
+  width: 100px;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password .lw-PadTop20 {
+  float: left;
+}
+
+.contain-stepup.sharedauth.authlogin .authenticator-body.transmit-password #ForgetAns {
+  float: left;
+  line-height: initial;
+  margin: 10px 0 0 0;
+}
+
+.contain-stepup.sharedauth.authlogin .showHideBtn {
+  top: -32px;
+  right: 5px;
+}
+
+.contain-stepup.sharedauth.authlogin .lw-passwordScreenHeight {
+  height: 80px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray {
+  width: 228px;
+  box-sizing: border-box;
+  border: 1px solid #e2e2e2;
+  background: linear-gradient(to bottom, #efefef 0%, #efefef 100%);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#F2F2F2');
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F2F2F2), color-stop(100%, #F2F2F2));
+  background: -webkit-linear-gradient(top, #F2F2F2 0%, #F2F2F2 100%);
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  height: 290px;
+  -webkit-border-top-right-radius: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: static;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit-hide {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit {
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit h1, .contain-stepup.sharedauth.loginwidgetgray .login-transmit h2, .contain-stepup.sharedauth.loginwidgetgray .login-transmit h3 {
+  font-size: 12px;
+  color: #0c2074;
+  font-weight: bold;
+  line-height: 14px;
+  margin: 5px 0 10px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit.transmit-disclosure {
+  font-size: 8px;
+  line-height: 10px;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .login-transmit-show {
+  display: block;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .mobile-list {
+  overflow: auto;
+  height: 110px;
+  margin-top: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-header, .contain-stepup.sharedauth.loginwidgetgray .authenticator-body, .contain-stepup.sharedauth.loginwidgetgray .authenticator-footer {
+  margin: 0;
+  padding: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray h2, .contain-stepup.sharedauth.loginwidgetgray h3, .contain-stepup.sharedauth.loginwidgetgray p, .contain-stepup.sharedauth.loginwidgetgray span, .contain-stepup.sharedauth.loginwidgetgray label, .contain-stepup.sharedauth.loginwidgetgray a, .contain-stepup.sharedauth.loginwidgetgray button {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray h2, .contain-stepup.sharedauth.loginwidgetgray h3 {
+  font-weight: 600;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray span, .contain-stepup.sharedauth.loginwidgetgray a {
+  color: #0C2074 !important;
+  font-size: 12px !important;
+  font-style: normal;
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray span {
+  text-decoration: none !important;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray a, .contain-stepup.sharedauth.loginwidgetgray a:hover {
+  padding: 0;
+  margin: 10px 0 0;
+  font-weight: 400;
+  text-decoration: underline;
+  line-height: 14px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray p {
+  font-size: 12px;
+  font-weight: normal !important;
+  line-height: 16px;
+  color: #333333;
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray p.error {
+  position: static;
+  margin: 5px 0 0 0;
+  font-size: 10px;
+  color: red;
+  float: left;
+  line-height: 11px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray h1, .contain-stepup.sharedauth.loginwidgetgray label {
+  font-size: 12px;
+  color: #0c2074;
+  font-weight: bold;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray label {
+  margin: 10px 0 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .lw-placeholderIe8 {
+  width: 100%;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .lw-AuthBody_Lock_Icon.lw-Lock_Icon {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .lw-marBottom7 {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray div#imgSound {
+  position: absolute;
+  top: 30px;
+  left: 72px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .btn-wrap {
+  margin: 5px 0 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray button, .contain-stepup.sharedauth.loginwidgetgray .btn {
+  background: linear-gradient(to top, #BDBDBD 0%, #F2F2F2 100%) repeat scroll 0 0 padding-box transparent !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#F2F2F2', endColorstr='#BDBDBD') !important;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F2F2F2), color-stop(100%, #BDBDBD)) !important;
+  background: -webkit-linear-gradient(top, #F2F2F2 0%, #BDBDBD 100%) !important;
+  border-radius: 4px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  color: #0C2074 !important;
+  font-family: Helvetica-Neue,Helvetica,Arial,sans-serif !important;
+  font-weight: bold !important;
+  border: 1px solid #aeadad !important;
+  width: 130px !important;
+  height: 28px !important;
+  outline: 0 none !important;
+  box-shadow: 0 2px 2px #b7b7b7;
+  text-align: center;
+  padding: 5px 30px !important;
+  margin-right: 15px !important;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray button.secondary, .contain-stepup.sharedauth.loginwidgetgray button.idshieldlink:hover, .contain-stepup.sharedauth.loginwidgetgray button.secondary:hover, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray .btn.secondary, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink:hover, .contain-stepup.sharedauth.loginwidgetgray .btn.secondary:hover {
+  border: none !important;
+  box-shadow: none;
+  background: none !important;
+  font-weight: 400 !important;
+  font-size: 12px !important;
+  font-style: normal;
+  width: initial !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 5px !important;
+  padding-bottom: 0 !important;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray button#otpResend, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink, .contain-stepup.sharedauth.loginwidgetgray .btn#otpResend {
+  display: inline-block;
+  height: initial !important;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray button.idshieldlink:focus, .contain-stepup.sharedauth.loginwidgetgray button#otpResend:focus, .contain-stepup.sharedauth.loginwidgetgray .btn.idshieldlink:focus, .contain-stepup.sharedauth.loginwidgetgray .btn#otpResend:focus {
+  outline: none !important;
+  border: 1px solid #aeadad !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray button:focus, .contain-stepup.sharedauth.loginwidgetgray .btn:focus {
+  outline: none !important;
+  border: 1px solid #FFF !important;
+  -webkit-box-shadow: 0 0 2px 1px #0C2074 !important;
+  -moz-box-shadow: 0 0 2px 1px #0C2074 !important;
+  box-shadow: 0 0 2px 1px #0C2074 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray input {
+  border-radius: 4px;
+  padding: 5px;
+  color: #736f6e;
+  background-color: #ffffff;
+  box-shadow: 0 25px 1em -27px #999999 inset !important;
+  outline: none;
+  border: solid 1px #888 !important;
+  font-size: 1em;
+  cursor: text;
+  width: 90%;
+  margin: 0;
+  height: 23px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray input:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0px 0px 0px 2px #109cde !important;
+  -moz-box-shadow: 0px 0px 0px 2px #109cde !important;
+  box-shadow: 0px 0px 0px 2px #109cde !important;
+  border: solid 1px #FFF !important;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray ul li {
+  list-style: none;
+  padding-right: 20px;
+  margin: 0;
+  font-size: 15px;
+  border: none;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray hr {
+  display: none;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password .lw-passwordImage {
+  margin: 0 10px 0 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password label {
+  font-style: normal;
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password input {
+  margin: 0 0 15px;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .authenticator-body.transmit-password p.error {
+  margin: 0 0 5px;
+  width: 100%;
+}
+
+.contain-stepup.sharedauth.loginwidgetgray .showHideBtn {
+  top: -34.5px;
+  right: 2px;
+  height: 16px !important;
+  box-shadow: 0 23px 1em -29px #999999 inset !important;
+  -webkit-appearance: none !important;
+}
+
+.contain-stepup.sharedauth.tuxlogin {
+  font-family: "Helvetica Neue", Open Sans, sans-serif;
+  color: white;
+  background: #074080;
+  background: -moz-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -webkit-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -o-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: -ms-linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  background: linear-gradient(#0950a0 0, #084992 60%, #074080 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  border-radius: 0;
+  padding: 105px 50px 0;
+  /** DE-SE Card 226: TUX Log In Button to move up in Password screen **/
+  /** DE-SE Card 204, 226 Show/Hide PWD changes **/
+}
+
+.contain-stepup.sharedauth.tuxlogin * {
+  color: #FFF;
+}
+
+.contain-stepup.sharedauth.tuxlogin h1, .contain-stepup.sharedauth.tuxlogin h2, .contain-stepup.sharedauth.tuxlogin h3, .contain-stepup.sharedauth.tuxlogin label, .contain-stepup.sharedauth.tuxlogin p, .contain-stepup.sharedauth.tuxlogin a, .contain-stepup.sharedauth.tuxlogin .btn-wrap {
+  text-align: center;
+}
+
+.contain-stepup.sharedauth.tuxlogin .login-transmit-hide {
+  display: none;
+}
+
+.contain-stepup.sharedauth.tuxlogin div.new-UX-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 85px;
+  background: #0d427e;
+  padding: 34px 0 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.contain-stepup.sharedauth.tuxlogin div.new-UX-header img {
+  width: 92px;
+  height: 23px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contain-stepup.sharedauth.tuxlogin .login-transmit h1, .contain-stepup.sharedauth.tuxlogin .login-transmit h2, .contain-stepup.sharedauth.tuxlogin .login-transmit h3 {
+  margin: 5px auto 0;
+}
+
+.contain-stepup.sharedauth.tuxlogin form.transmit-qa {
+  text-align: center;
+}
+
+.contain-stepup.sharedauth.tuxlogin .transmit-password label {
+  text-align: left;
+  float: left;
+}
+
+.contain-stepup.sharedauth.tuxlogin p, .contain-stepup.sharedauth.tuxlogin .authenticator-footer p {
+  margin: 0 auto;
+}
+
+.contain-stepup.sharedauth.tuxlogin a, .contain-stepup.sharedauth.tuxlogin .authenticator-footer a {
+  margin: 10px auto;
+  width: initial;
+}
+
+.contain-stepup.sharedauth.tuxlogin a:focus, .contain-stepup.sharedauth.tuxlogin .authenticator-footer a:focus {
+  border: none;
+  outline: solid 1px #FFF !important;
+}
+
+.contain-stepup.sharedauth.tuxlogin input {
+  text-align: center;
+}
+
+.contain-stepup.sharedauth.tuxlogin .btn-wrap {
+  margin: 0;
+}
+
+.contain-stepup.sharedauth.tuxlogin button, .contain-stepup.sharedauth.tuxlogin button.btn, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink {
+  height: 44px;
+  background: #D83B48 !important;
+  border-radius: 2px !important;
+  font-weight: 900 !important;
+  color: #FFF;
+  border: solid 1px #D83B48 !important;
+  margin-top: 10px;
+}
+
+.contain-stepup.sharedauth.tuxlogin button:hover, .contain-stepup.sharedauth.tuxlogin button.btn:hover, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink:hover {
+  text-decoration: underline;
+  background: #D83B48 !important;
+}
+
+.contain-stepup.sharedauth.tuxlogin button:focus, .contain-stepup.sharedauth.tuxlogin button.btn:focus, .contain-stepup.sharedauth.tuxlogin .btn.secondary:focus {
+  outline: none !important;
+  border: solid 1px #D83B48 !important;
+  box-shadow: 0 0 1px 2px #D83B48 !important;
+  -moz-box-shadow: 0 0 1px 2px #D83B48 !important;
+  -webkit-box-shadow: 0 0 1px 2px #D83B48 !important;
+  text-decoration: underline;
+}
+
+.contain-stepup.sharedauth.tuxlogin .btn.secondary, .contain-stepup.sharedauth.tuxlogin .btn.idshieldlink {
+  color: #2a3942 !important;
+  background: #FFF !important;
+}
+
+.contain-stepup.sharedauth.tuxlogin ul {
+  margin: 15px auto;
+}
+
+.contain-stepup.sharedauth.tuxlogin ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.contain-stepup.sharedauth.tuxlogin .authenticator-body.transmit-password p.error {
+  margin: -4% 0 0 0;
+}
+
+@media (orientation: landscape) {
+  .contain-stepup.sharedauth.tuxlogin .authenticator-body.transmit-password p.error {
+    margin: -3% 0 0 0;
+  }
+}
+
+.contain-stepup.sharedauth.tuxlogin .showHideBtn {
+  top: -38px;
+  right: 10px;
+  font-size: 14px !important;
+}
+
+.contain-stepup.sharedauth.tuxlogin #txtPassword {
+  font-size: 14px !important;
+}
+
+/*defect fix 22590*/
+#disablingDiv {
+  /* Do not display it on entry */
+  display: none;
+  /* Display it on the layer with index 1001.
+       Make sure this is the highest z-index value
+       used by layers on that page */
+  z-index: 1001;
+  /* make it cover the whole screen */
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  /* make it white but fully transparent */
+  background-color: white;
+  opacity: .00;
+  filter: alpha(opacity=00);
+}
+
+/*# sourceMappingURL=SharedAuthStyles.css.map */
+/*Spinner Css Start*/
+#divLoading img {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  margin-top: -23px;
+}
+
+.sa__dot-loader-ie-lower {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: url("../../Images/ajax-loader.0180881141.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.sa__dot-loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  height: 290px;
+  width: 230px;
+}
+
+div.sa__dot-loader div.loadingSpinner {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-left: -23px;
+  margin-top: -23px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+
+.sa__loader-ie-lower {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+  background-image: url("../../Images/ajax-loader.0180881141.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+div.sa__loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  opacity: 0.8;
+}
+
+div.sa__loader div.loadingSpinner {
+  position: absolute;
+  z-index: 1000000;
+  top: 50%;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  margin-left: -23px;
+  margin-top: -23px;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 10px;
+}
+
+div.loadingSpinner div.holder {
+  position: relative;
+  width: inherit;
+  height: inherit;
+}
+
+div.loadingSpinner div[class^="bar"] {
+  width: 6%;
+  height: 16%;
+  background: #ffffff;
+  position: absolute;
+  left: 48%;
+  top: 43%;
+  opacity: 0;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  -webkit-animation: fade 1s linear infinite;
+  -moz-animation: fade 1s linear infinite;
+  -o-animation: fade 1s linear infinite;
+  animation: fade 1s linear infinite;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+@-moz-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+@-o-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+div.loadingSpinner div.bar1 {
+  -webkit-transform: rotate(0deg) translate(0, -130%);
+  -moz-transform: rotate(0deg) translate(0, -130%);
+  -ms-transform: rotate(0deg) translate(0, -130%);
+  -o-transform: rotate(0deg) translate(0, -130%);
+  transform: rotate(0deg) translate(0, -130%);
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+div.loadingSpinner div.bar2 {
+  -webkit-transform: rotate(30deg) translate(0, -130%);
+  -moz-transform: rotate(30deg) translate(0, -130%);
+  -ms-transform: rotate(30deg) translate(0, -130%);
+  -o-transform: rotate(30deg) translate(0, -130%);
+  transform: rotate(30deg) translate(0, -130%);
+  -webkit-animation-delay: -0.9167s;
+  -moz-animation-delay: -0.9167s;
+  -o-animation-delay: -0.9167s;
+  animation-delay: -0.9167s;
+}
+
+div.loadingSpinner div.bar3 {
+  -webkit-transform: rotate(60deg) translate(0, -130%);
+  -moz-transform: rotate(60deg) translate(0, -130%);
+  -ms-transform: rotate(60deg) translate(0, -130%);
+  -o-transform: rotate(60deg) translate(0, -130%);
+  transform: rotate(60deg) translate(0, -130%);
+  -webkit-animation-delay: -0.833s;
+  -moz-animation-delay: -0.833s;
+  -o-animation-delay: -0.833s;
+  animation-delay: -0.833s;
+}
+
+div.loadingSpinner div.bar4 {
+  -webkit-transform: rotate(90deg) translate(0, -130%);
+  -moz-transform: rotate(90deg) translate(0, -130%);
+  -ms-transform: rotate(90deg) translate(0, -130%);
+  -o-transform: rotate(90deg) translate(0, -130%);
+  transform: rotate(90deg) translate(0, -130%);
+  -webkit-animation-delay: -0.7497s;
+  -moz-animation-delay: -0.7497s;
+  -o-animation-delay: -0.7497s;
+  animation-delay: -0.7497s;
+}
+
+div.loadingSpinner div.bar5 {
+  -webkit-transform: rotate(120deg) translate(0, -130%);
+  -moz-transform: rotate(120deg) translate(0, -130%);
+  -ms-transform: rotate(120deg) translate(0, -130%);
+  -o-transform: rotate(120deg) translate(0, -130%);
+  transform: rotate(120deg) translate(0, -130%);
+  -webkit-animation-delay: -0.667s;
+  -moz-animation-delay: -0.667s;
+  -o-animation-delay: -0.667s;
+  animation-delay: -0.667s;
+}
+
+div.loadingSpinner div.bar6 {
+  -webkit-transform: rotate(150deg) translate(0, -130%);
+  -moz-transform: rotate(150deg) translate(0, -130%);
+  -ms-transform: rotate(150deg) translate(0, -130%);
+  -o-transform: rotate(150deg) translate(0, -130%);
+  transform: rotate(150deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5837s;
+  -moz-animation-delay: -0.5837s;
+  -o-animation-delay: -0.5837s;
+  animation-delay: -0.5837s;
+}
+
+div.loadingSpinner div.bar7 {
+  -webkit-transform: rotate(180deg) translate(0, -130%);
+  -moz-transform: rotate(180deg) translate(0, -130%);
+  -ms-transform: rotate(180deg) translate(0, -130%);
+  -o-transform: rotate(180deg) translate(0, -130%);
+  transform: rotate(180deg) translate(0, -130%);
+  -webkit-animation-delay: -0.5s;
+  -moz-animation-delay: -0.5s;
+  -o-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+div.loadingSpinner div.bar8 {
+  -webkit-transform: rotate(210deg) translate(0, -130%);
+  -moz-transform: rotate(210deg) translate(0, -130%);
+  -ms-transform: rotate(210deg) translate(0, -130%);
+  -o-transform: rotate(210deg) translate(0, -130%);
+  transform: rotate(210deg) translate(0, -130%);
+  -webkit-animation-delay: -0.4167s;
+  -moz-animation-delay: -0.4167s;
+  -o-animation-delay: -0.4167s;
+  animation-delay: -0.4167s;
+}
+
+div.loadingSpinner div.bar9 {
+  -webkit-transform: rotate(240deg) translate(0, -130%);
+  -moz-transform: rotate(240deg) translate(0, -130%);
+  -ms-transform: rotate(240deg) translate(0, -130%);
+  -o-transform: rotate(240deg) translate(0, -130%);
+  transform: rotate(240deg) translate(0, -130%);
+  -webkit-animation-delay: -0.333s;
+  -moz-animation-delay: -0.333s;
+  -o-animation-delay: -0.333s;
+  animation-delay: -0.333s;
+}
+
+div.loadingSpinner div.bar10 {
+  -webkit-transform: rotate(270deg) translate(0, -130%);
+  -moz-transform: rotate(270deg) translate(0, -130%);
+  -ms-transform: rotate(270deg) translate(0, -130%);
+  -o-transform: rotate(270deg) translate(0, -130%);
+  transform: rotate(270deg) translate(0, -130%);
+  -webkit-animation-delay: -0.2497s;
+  -moz-animation-delay: -0.2497s;
+  -o-animation-delay: -0.2497s;
+  animation-delay: -0.2497s;
+}
+
+div.loadingSpinner div.bar11 {
+  -webkit-transform: rotate(300deg) translate(0, -130%);
+  -moz-transform: rotate(300deg) translate(0, -130%);
+  -ms-transform: rotate(300deg) translate(0, -130%);
+  -o-transform: rotate(300deg) translate(0, -130%);
+  transform: rotate(300deg) translate(0, -130%);
+  -webkit-animation-delay: -0.167s;
+  -moz-animation-delay: -0.167s;
+  -o-animation-delay: -0.167s;
+  animation-delay: -0.167s;
+}
+
+div.loadingSpinner div.bar12 {
+  -webkit-transform: rotate(330deg) translate(0, -130%);
+  -moz-transform: rotate(330deg) translate(0, -130%);
+  -ms-transform: rotate(330deg) translate(0, -130%);
+  -o-transform: rotate(330deg) translate(0, -130%);
+  transform: rotate(330deg) translate(0, -130%);
+  -webkit-animation-delay: -0.0833s;
+  -moz-animation-delay: -0.0833s;
+  -o-animation-delay: -0.0833s;
+  animation-delay: -0.0833s;
+}
+
+.sa__sub_loader {
+  position: absolute;
+  top: 140px;
+}
+
+/*Spinner Css End*/
+.sharedauth-loading.sharedauth-complete .sa__loader {
+  display: none;
+}
+
+.sharedauth-loading .sa__loader .loadingSpinner {
+  background-image: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.tempCancel {
+  float: left;
+  width: 80px;
+  height: 75px;
+}
+
+.linkDecoration {
+  text-decoration: underline !important;
+}
+
+/** DE-SE Card #226, 204 UI changes **/
+#btnShow.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=SharedAuthStyles.css.map */

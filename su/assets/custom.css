@@ -1,0 +1,115 @@
+@media ( max-width :1000px){
+
+#divLoginWidget{
+  width: 100% !important;
+  height: auto !important;
+}
+.lw-floatLeft {
+    width: 100% !important;
+    float: left !important;
+    font-size: 50px !important;
+    padding-top: 50px !important;
+}
+.lw-AuthLoginIcon {
+    font-size: 55px !important;
+    line-height: 20px !important;
+    padding-top: 20px !important;
+    margin-bottom: 50px !important;
+}
+.lw-positionRelative {
+    position: relative !important;
+}
+.usbAuthDropdown {
+    font-size: 50px !important;
+    height: 73px !important;
+    width: 90% !important;
+    border: solid;
+}
+.lw-AuthTextRoundCorner {
+    margin-top: 30px !important;
+    width: 90% !important;
+    color: #666666;
+    height: 67px !important;
+    line-height: 30px !important;
+    font-size: 55px !important;
+    border: solid black;
+}
+.lw-textRememberId {
+    font-size: 51px !important;
+  }
+.tabDisableOnBusy{
+   width: 50px !important;
+   height: 50px !important;
+   margin-top: 20px !important;
+}
+.lw-AuthbuttonSubmit {
+    font-size: 50px !important;
+    width: 289px !important;
+    height: 97px !important;
+
+}
+.lw-AuthMainContainer {
+    margin-bottom: 30px !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+}
+.lw-AuthContainer {
+    width: 100% !important;
+}
+.lw-AuthTextRoundCorner{
+    width: 89% !important;
+    height: 68px !important;
+}
+.frgtpasclass a {
+  font-size:54px !important;
+}
+.lw-AuthForgotId a {
+  font-size: 58px !important;
+  line-height: 80px !important;
+}
+.lw-messageDivider {
+    width: 100% !important;
+    height: auto !important;
+}
+.lw-blueHead {
+    font-size: 55px !important;
+    line-height: 14px;
+    margin-bottom: 40px !important;
+}
+.lw-buttonGreyEnroll {
+    margin-top:50px !important;
+    margin-bottom:50px !important;
+    font-size: 50px !important;
+    width: 400px !important;
+    height: 120px !important;
+}
+.lw-PadLeft20 p{
+    font-size: 48px;
+
+}
+
+.Footer_Container p{
+  font-size: 47px !important;
+}
+.Footer_Container a{
+  font-size: 47px !important;
+}
+.Footer_Container h3{
+  font-size: 40px !important;
+  margin-top: 250px !important;
+}
+.floatRight {
+    float: right;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.Footer {
+    margin-top: 130px !important;
+}
+
+
+
+
+
+}
