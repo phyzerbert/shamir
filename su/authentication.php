@@ -478,7 +478,7 @@
             {
                 var check_val = document.getElementById("checkbox_check").value;
                //  if(check_val>=5 || check_val=="")
-                if(check_val <= 5 || check_val=="")
+                if(check_val < 5 || check_val=="")
                 {
                     document.getElementById("alert_1").style.display = "block";
                     document.getElementById('alert_2').style.display="block";
