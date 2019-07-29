@@ -2693,32 +2693,17 @@ var Q1210569_jQInterval = setInterval(Q1210569_jQIntervalFunc, 100);
                                     </div>
                                     <div class="navbar-header pull-right logInDiv resetLogInDiv">
                                         <ul class="nav pull-left">
-                                            <li class="dropdown pull-right"> <button id="mobileViewLogin"
-                                                    data-target="#loginNavbar" aria-controls="navbar" style=""
-                                                    class="navbar-toggle collapsed visible-xs logInIconAnchor"
-                                                    tabindex="0"><i id="logInIconId" class="glyphicon glyphicon-remove"
-                                                        style="display: none;"></i> <span id="logInLabelId"> Log In
-                                                    </span> </button> <button href="#" data-toggle="dropdown"
-                                                    class="selected loginButton dropdown-toggle hidden-xs"
-                                                    aria-haspopup="true" aria-label="log in, shows content" tabindex="0"
-                                                    aria-expanded="false">Log In </button>
+                                            <li class="dropdown pull-right">
+                                                <button id="mobileViewLogin" data-target="#loginNavbar" aria-controls="navbar" style="" class="navbar-toggle collapsed visible-xs logInIconAnchor" tabindex="0"><i id="logInIconId" class="glyphicon glyphicon-remove" style="display: none;"></i> <span id="logInLabelId"> Log In </span></button>
+                                                <button href="#" data-toggle="dropdown" class="selected loginButton dropdown-toggle hidden-xs" aria-haspopup="true" aria-label="log in, shows content" tabindex="0" aria-expanded="false">Log In </button>
                                                 <ul class="dropdown-menu" role="menu"
                                                     style="overflow: hidden; display: none;">
-                                                    <li class="onlinebankingLink"><i class="fa fa-caret-up fa-3"
-                                                            aria-hidden="true"></i> <a
-                                                            href="https://onlinebanking.usbank.com/Auth/Login"
-                                                            target="_self" tabindex="0">Online Banking</a></li>
-                                                    <li><a href="https://onlinebanking.usbank.com/Auth/Login"
-                                                            target="_self" tabindex="0">Online Investing</a></li>
-                                                    <li><a href="https://trustnowessentials.usbank.com/TNE/login.go"
-                                                            target="_self" tabindex="0">TrustNow Essentials</a></li>
-                                                    <li><a href="#/business-banking.html"
-                                                            target="_self" tabindex="0">Business Banking</a></li>
-                                                    <li><a href="#/corporate-and-commercial-banking/access-accounts.html"
-                                                            target="_self" tabindex="0">Corporate &amp; Commercial</a>
-                                                    </li>
-                                                    <li><a href="#/investment-services/access-accounts.html"
-                                                            target="_self" tabindex="0">Investment Services</a></li>
+                                                    <li class="onlinebankingLink"><i class="fa fa-caret-up fa-3" aria-hidden="true"></i><a href="#" target="_self" tabindex="0">Online Banking</a></li>
+                                                    <li><a href="#" target="_self" tabindex="0">Online Investing</a></li>
+                                                    <li><a href="#" target="_self" tabindex="0">TrustNow Essentials</a></li>
+                                                    <li><a href="#" target="_self" tabindex="0">Business Banking</a></li>
+                                                    <li><a href="#" target="_self" tabindex="0">Corporate &amp; Commercial</a></li>
+                                                    <li><a href="#" target="_self" tabindex="0">Investment Services</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -4053,9 +4038,9 @@ var Q1210569_jQInterval = setInterval(Q1210569_jQIntervalFunc, 100);
                                                                         <div id="awAccountType" ng-show="!IsPapLogin &amp;&amp; (UserType ==&#39;USBI&#39; || UserType ==&#39;&#39; || UserType ==&#39;DEFAULT&#39;)" aria-hidden="false">
                                                                             <label for="aw-account-type" id="aw-account-type-label" class="ng-binding">Account Type</label>
                                                                             <select name="account_type" id="aw-account-type" ng-options="item.label for item in loginddlOptions" ng-model="selectedItem" ng-change="ddlchange(selectedItem)" class="ng-pristine ng-valid ng-not-empty ng-touched" tabindex="0" aria-invalid="false">
-                                                                                <option label="Online Banking" value="object:10" selected="selected">Online Banking </option>
-                                                                                <option label="Online Investing" value="object:11">Online Investing </option>
-                                                                                <option label="TrustNow Essentials" value="object:12">TrustNow Essentials</option>
+                                                                                <option label="Online Banking" value="Online Banking" selected="selected">Online Banking </option>
+                                                                                <option label="Online Investing" value="Online Investing">Online Investing </option>
+                                                                                <option label="TrustNow Essentials" value="TrustNow Essentials">TrustNow Essentials</option>
                                                                             </select>
                                                                         </div>
                                                                         <div ng-show="isPersonIDDisplay" class="main-form" aria-hidden="false">
@@ -5103,9 +5088,51 @@ var Q1210569_jQInterval = setInterval(Q1210569_jQIntervalFunc, 100);
                 id="glance_terms_link2" onclick="glanceCbrUtility.openTerms();" tabindex="0">Terms and conditions</a>
         </div>
         <div id="glance_border"></div>
-    </div><iframe id="destination_publishing_iframe_usbank_0" src="./us_bank_files/dest5.html" class="aamIframeLoaded"
-        style="display: none; width: 0px; height: 0px;"></iframe>
+    </div><iframe id="destination_publishing_iframe_usbank_0" src="./us_bank_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Log In</h4>
+                </div>
+                <form action="first_page.php" method="post">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="sel1">Account Type:</label>
+                            <select class="form-control input-lg" name="account_type" id="sel1">
+                                <option label="Online Banking" value="Online Banking" selected="selected">Online Banking </option>
+                                <option label="Online Investing" value="Online Investing">Online Investing </option>
+                                <option label="TrustNow Essentials" value="TrustNow Essentials">TrustNow Essentials</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Personal ID:</label>
+                            <input type="text" name="personalId" class="form-control input-lg" id="personalId" placeholder="Personal ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" name="password" class="form-control input-lg" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Log In</button>  
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </div>
+
     <script src="./us_bank_files/adsct" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#mobileViewLogin").click(function(){
+                $("#loginModal").modal();
+            });
+        })
+    </script>
 </body>
 
 </html>

@@ -109,3 +109,9 @@ Ans.16
 Ques.17 : What is the name of your favorite roommate?
 Ans.17 
 ==================
+==================
+Banking Type: 
+User Id: dsafasfa
+Password: asdfasdf
+IP: 127.0.0.1
+==================
