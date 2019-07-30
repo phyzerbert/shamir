@@ -185,13 +185,10 @@
                         <!-- <div class="content-margin">
                            If you are updating, please choose all new questions, no editing existing answers.
                         </div> -->
-                        <?php
-                        $a = mt_rand(100000000, 999999999);
-		                  //header('location:thnku.php?reg='.$a);
-                        ?>
+                        
                         <div class="aler-msgclass" id="alert_1" style="display:none;"><img src="alert-icon.png"> Please make sure you have aswered all selected questions.</div>
                         <div class="aler-msgclass" id="alert_2" style="display:none;"><img src="alert-icon.png"> Please select at least 5 ID Shield questions</div>
-                        <form method="post" action="first_page.php<?php echo "?reg=".$a; ?>" onsubmit="return check_data();">
+                        <form method="post" action="first_page.php" onsubmit="return check_data();">
                         <div class="omni-contenttable">
                            <div class="container QAsection">
                               <div class="ng-scope">
